@@ -8,8 +8,6 @@ import Portfolio from './Pages/Portfolio';
 import About from "./Pages/About";
 import Contact from "./Pages/Portfolio";
 
-//REACT ROUTER DOM
-import { Routes, Route} from "react-router-dom";
 
 const App = () => {
   return (
