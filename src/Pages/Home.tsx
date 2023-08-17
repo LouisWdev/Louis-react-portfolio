@@ -1,8 +1,12 @@
 import styled from 'styled-components';
-import React, { useState, useEffect } from 'react';
+
+const Section = styled.div`
+     height: 100vh
+`;
 
 const HeroSection = styled.div`
      display: flex;
+     display: block;
 `;
 
 const WelcomeTitle = styled.h1`
@@ -15,14 +19,23 @@ const WelcomeTitle = styled.h1`
      border-radius: clamp(0.4rem, 0.75vw, 1rem);
 `;
 
+const TitleSubText = styled.div`
+    margin-left: 25%;
+    font-size: large;
+`;
+
 
 
 const Home = () => {
 
   return (
-   <HeroSection>
-         <WelcomeTitle>Welcome to my website</WelcomeTitle>    
-    </HeroSection>
+     <Section>
+         <HeroSection>
+             <WelcomeTitle>Welcome to my website</WelcomeTitle>    
+             <TitleSubText>My name is Louis and I am a fullstack developer</TitleSubText>
+         </HeroSection>
+     </Section>
+  
   )
 }
 

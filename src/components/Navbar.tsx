@@ -1,18 +1,21 @@
 import styled from 'styled-components'
 
 const NavbarContainer = styled.div`
-     padding: 10px;
-     margin-left: 40%;
-     align-items: center;
+     background-color: black;
+     width: 100%;
      display: flex;
+     position: fixed;
+     margin-left: 40%;
+     top: 0;
 `;
 
-const Button = styled.button`
+const Button = styled.h2`
      color: white;
-     list-style: none;
+     list-style: none; 
+     display: flex;
+     background-color: black;
      font-size: 20px;
      padding: 10px;
-     margin-right: 20px;
      border: none;
 
      &:hover {

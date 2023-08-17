@@ -2,10 +2,9 @@ import styled from 'styled-components';
 
 const FooterContainer = styled.div`
      display: flex;
-     position: absolute;
+     position: fixed;
      align-items: center;
      bottom: 0%;
-     margin-left: 1%;
 `;
 
 const Footer = () => {
