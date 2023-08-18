@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const NavbarContainer = styled.div`
      background-color: black;
@@ -17,6 +17,7 @@ const Button = styled.h2`
      font-size: 20px;
      padding: 10px;
      border: none;
+     cursor: pointer;
 
      &:hover {
         text-decoration: underline;
