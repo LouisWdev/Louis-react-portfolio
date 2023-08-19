@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import Home from '../Pages/Home';
 
 const NavbarContainer = styled.div`
      background-color: black;

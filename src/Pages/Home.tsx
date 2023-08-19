@@ -10,9 +10,9 @@ const HeroSection = styled.div`
 `;
 
 const WelcomeTitle = styled.h1`
-     font-size: 50px;
+     font-size: 65px;
      margin-left: 20%;
-     margin-top: 10%;
+     margin-top: 14%;
      font-family: 'Space Mono', monospace;
      color: white;
      padding: 0rem clamp(1rem, 2vw, 3rem);
@@ -33,6 +33,7 @@ const Home = () => {
          <HeroSection>
              <WelcomeTitle>Welcome to my website</WelcomeTitle>    
              <TitleSubText>My name is Louis and I am a fullstack developer</TitleSubText>
+             <image></image>
          </HeroSection>
      </Section>
   
