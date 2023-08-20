@@ -28,8 +28,6 @@ const Button = styled.h2`
 `;
 
 
-
-
 const Navbar = () => {
   return (
     <NavbarContainer>
