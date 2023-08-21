@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 
 const Section = styled.div`
      height: 100vh
+     scroll-snap-align: center;
 `;
 
 const HeroSection = styled.div`
@@ -53,8 +54,8 @@ const BreathingSection = styled.section`
   position: absolute;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(126, 0, 0, 1), transparent);
-  border-radius: 50%; /* Make it a circle */
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.8) 0%, transparent 80%);
+  border-radius: 50%;
   margin-top: 30%;
   left: -1;
   margin-right: 100%;
