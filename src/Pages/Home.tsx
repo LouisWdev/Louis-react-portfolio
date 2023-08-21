@@ -53,7 +53,7 @@ const BreathingSection = styled.section`
   position: absolute;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent);
+  background: radial-gradient(circle, rgba(126, 0, 0, 1), transparent);
   border-radius: 50%; /* Make it a circle */
   margin-top: 30%;
   left: -1;
