@@ -9,21 +9,39 @@ const Section = styled.div`
 const HeroSection = styled.div`
      display: flex;
      display: block;
+     margin-top: 300px;
+     margin-left: 300px;
 `;
 
 const WelcomeTitle = styled.h1`
-     font-size: 65px;
-     margin-left: 20%;
-     margin-top: 14%;
-     font-family: 'Space Mono', monospace;
-     color: white;
-     padding: 0rem clamp(1rem, 2vw, 3rem);
-     border-radius: clamp(0.4rem, 0.75vw, 1rem);
+      margin-top: 250px;
+      margin-left: 400px;
+      font-size: 50px;
+      border-right: .15em solid rgb(0, 24, 2); /* The typwriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em; /* Adjust as needed */
+      animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .75s step-end infinite;
+
+      /* The typing effect */
+     @keyframes typing {
+           from { width: 0 }
+           to { width: 100% }
+          }
+
+     /* The typewriter cursor effect */
+     @keyframes blink-caret {
+          from, to { border-color: transparent }
+          50% { border-color: rgb(0, 68, 255); }
+         }
 `;
 
 const TitleSubText = styled.div`
-    margin-left: 25%;
     font-size: large;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    
 `;
 
 const Home = () => {
