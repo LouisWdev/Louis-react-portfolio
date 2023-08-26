@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
+import  Link  from 'react-scroll';
+
+
+ const Section = styled.div`
+      height: 100vh;
+ `;
+
 
 const typingAnimation = keyframes`
   from { width: 0 }
@@ -12,7 +19,7 @@ const blinkCaretAnimation = keyframes`
 `;
 
 const Container = styled.div`
-  height: 100vh;
+margin-top: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +50,7 @@ const Home = () => {
   }, []);
 
   return (
+    <Section>
     <Container>
       <div>
         <Text>
@@ -53,6 +61,7 @@ const Home = () => {
         </SubText>
       </div>
     </Container>
+    </Section>
   );
 };
 
