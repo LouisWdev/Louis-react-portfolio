@@ -14,7 +14,7 @@ const cardContent = [
 
 const Portfolio = () => {
   return (
-    <Section>
+    <Section id="Portfolio">
         <Slider cards={cardContent}/>
     </Section>
   )

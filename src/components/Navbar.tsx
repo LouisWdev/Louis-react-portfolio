@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import Home from '../Pages/Home';
 
 const NavbarContainer = styled.div`
@@ -31,10 +31,10 @@ const Button = styled.h2`
 const Navbar = () => {
   return (
     <NavbarContainer>
-        <Button>Home</Button>
-        <Button>Portfolio</Button>
-        <Button>About</Button>
-        <Button>Contact</Button>
+      <Link to="home"><Button>Home</Button></Link>
+      <Link to="Portfolio"><Button>Portfolio</Button></Link> 
+      <Link to="About"><Button>About</Button></Link>  
+      <Link to="Contact"><Button>Contact</Button></Link>
    </NavbarContainer>
   )
 }

@@ -58,7 +58,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Section>
+    <Section id='home'>
     <Container>
       <div>
         <Text>

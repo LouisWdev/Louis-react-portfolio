@@ -7,7 +7,7 @@ const Section = styled.div`
 
 const About = () => {
   return (
-    <Section>
+    <Section id='About'>
         <div>About</div>
     </Section>
   )
