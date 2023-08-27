@@ -38,6 +38,14 @@ const SubText = styled.div`
   font-size: large;
 `;
 
+const Introduction = styled.div`
+      font-size: 20px;
+      margin-top: 30%;
+      margin-right: 40%;
+      text-align: center;
+
+`;
+
 const Home = () => {
   const [showText, setShowText] = useState(false);
 
@@ -61,6 +69,10 @@ const Home = () => {
         </SubText>
       </div>
     </Container>
+    <Introduction>
+      I am a passionate full stack developer that has a decade of.<br/>
+     experience studying and learning different technologies
+     </Introduction>
     </Section>
   );
 };
