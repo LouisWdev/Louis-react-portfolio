@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+const Section = styled.div`
+     height: 100vh;
+     display: flex;
+`;
+
 const FormContainer = styled.div`
   max-width: 400px;
   margin: 0 auto;
@@ -42,9 +47,6 @@ const Button = styled.button`
 `;
 
   
-const Section = styled.div`
-     height: 100vh
-`;
 
 
 const Contact = () => {
