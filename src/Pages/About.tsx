@@ -39,10 +39,7 @@ const About = () => {
         alt="Profile"
       />
       <Description>
-        Hi there! I'm [Your Name], a [Your Profession] based in [Your Location].
-        I'm passionate about [Your Interests/Hobbies] and enjoy [What You Enjoy
-        Doing]. With a background in [Your Background], I strive to [Your
-        Mission or Goal].
+          So I started coding from a young age and was already amazed by how coding works and so I strive to become a 10x developer. Besides coding I also do fitness and long distance running.
       </Description>
     </SectionContainer>
     </Section>
