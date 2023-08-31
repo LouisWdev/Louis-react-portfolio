@@ -3,28 +3,29 @@ import { Link } from 'react-scroll';
 import Home from '../Pages/Home';
 
 const NavbarContainer = styled.div`
-     background-color: black;
-     width: 100%;
-     display: flex;
-     position: fixed;
-     margin-left: 40%;
-     top: 0;
+  background-color: rgba(7, 0, 27, 0.8);
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  position: fixed;
+  top: 0;
 `;
 
 const Button = styled.h2`
-     color: white;
-     list-style: none; 
-     display: flex;
-     background-color: black;
-     font-size: 20px;
-     padding: 10px;
-     border: none;
-     cursor: pointer;
+  color: white;
+  list-style: none;
+  display: flex;
+  font-size: 20px;
+  background-color: rgba(7, 0, 27, 0.8);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 
-     &:hover {
-        text-decoration: underline;
-        color: gray;
-     }
+  &:hover {
+    text-decoration: underline;
+    color: gray;
+  }
 `;
 
 

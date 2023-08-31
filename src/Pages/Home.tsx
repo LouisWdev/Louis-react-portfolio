@@ -1,16 +1,26 @@
+//REACT 
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import  Link  from 'react-scroll';
 
+//ASSETS
+import BackgroundImg from '../assets/images/HomeBackground.png'
+
 
  const Section = styled.div`
       height: 100vh;
+      background-image: url(${BackgroundImg});
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
  `;
 
 
 const typingAnimation = keyframes`
-  from { width: 0 }
-  to { width: 100% }
+         from { width: 0 }
+         to { width: 100% }
 `;
 
 const blinkCaretAnimation = keyframes`
@@ -19,15 +29,15 @@ const blinkCaretAnimation = keyframes`
 `;
 
 const Container = styled.div`
-margin-top: 20%;
+  margin-top: 5%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+
 `;
 
 const Text = styled.div`
   font-size: 50px;
   white-space: nowrap;
+  display: flex;
   overflow: hidden;
   border-right: .15em solid rgb(0, 24, 2);
   animation: ${typingAnimation} 3.5s steps(40, end),
@@ -35,15 +45,7 @@ const Text = styled.div`
 `;
 
 const SubText = styled.div`
-  font-size: large;
-`;
-
-const Introduction = styled.div`
-      font-size: 20px;
-      margin-top: 30%;
-      margin-right: 40%;
-      text-align: center;
-
+   font-size: large;
 `;
 
 const Home = () => {
@@ -68,11 +70,7 @@ const Home = () => {
           My name is Louis and I am a fullstack developer
         </SubText>
       </div>
-    </Container>
-    <Introduction>
-      I am a passionate full stack developer that has a decade of.<br/>
-     experience studying and learning different technologies
-     </Introduction>
+      </Container>
     </Section>
   );
 };
