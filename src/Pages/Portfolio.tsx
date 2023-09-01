@@ -5,17 +5,10 @@ const Section = styled.div`
      height: 100vh
 `;
 
-const cardContent = [
-  "Card 1 Content",
-  "Card 2 Content",
-  "Card 3 Content",
-  // Add more card content as needed
-];
-
 const Portfolio = () => {
   return (
     <Section id="Portfolio">
-        <Slider cards={cardContent}/>
+          <Slider />
     </Section>
   )
 }

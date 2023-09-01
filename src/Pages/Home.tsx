@@ -31,7 +31,6 @@ const blinkCaretAnimation = keyframes`
 const Container = styled.div`
   margin-top: 5%;
   display: flex;
-
 `;
 
 const Text = styled.div`

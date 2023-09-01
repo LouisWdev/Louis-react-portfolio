@@ -1,56 +1,64 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-const SliderContainer = styled.div`
+// Define the card data (you can replace this with your own data)
+const cardData = [
+  { title: 'Card 1', content: 'Lorem ipsum dolor sit amet.' },
+  { title: 'Card 2', content: 'Consectetur adipiscing elit.' },
+  { title: 'Card 3', content: 'Sed do eiusmod tempor incididunt.' },
+  // Add more cards as needed
+];
+
+const CardSliderContainer = styled.div`
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
-  max-width: 400px;
-  height: 500px;
-  margin: 0 auto;
-  position: relative;
+  max-width: 600px; /* Adjust the width as needed */
+  margin-top: 10%;
+  margin-left: 20%;
 `;
 
-const SliderTrack = styled.div`
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-`;
-
-const SlideCard = styled.div`
-  flex: 100%;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+const Card = styled.div`
   background-color: #fff;
-  color: black;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+  padding: 16px;
+  width: 300px; /* Adjust the card width as needed */
 `;
 
-const SliderButton = styled.button`
-  border: none;
-  background-color: transparent;
-  font-size: 24px;
-  cursor: pointer;
-`;
+const Slider = () => {
+  const [activeCardIndex, setActiveCardIndex] = useState(0);
 
-const Slider = ({ cards }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+  const handlePrev = () => {
+    setActiveCardIndex((prevIndex) => Math.max(prevIndex - 1, 0));
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
+  const handleNext = () => {
+    setActiveCardIndex((prevIndex) =>
+      Math.min(prevIndex + 1, cardData.length - 1)
+    );
   };
 
   return (
-    <SliderContainer>
-      <SliderButton onClick={prevSlide}>&larr;</SliderButton>
-      <SliderTrack style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-        {cards.map((card, index) => (
-          <SlideCard key={index}>{card}</SlideCard>
+    <div>
+      <h2>Card Slider</h2>
+      <CardSliderContainer>
+        {cardData.map((card, index) => (
+          <Card
+            key={index}
+            style={{
+              transform: `translateX(${(index - activeCardIndex) * 320}px)`, // Adjust the card width
+            }}
+          >
+            <h3>{card.title}</h3>
+            <p>{card.content}</p>
+          </Card>
         ))}
-      </SliderTrack>
-      <SliderButton onClick={nextSlide}>&rarr;</SliderButton>
-    </SliderContainer>
+      </CardSliderContainer>
+      <button onClick={handlePrev}>Previous</button>
+      <button onClick={handleNext}>Next</button>
+    </div>
   );
 };
 
