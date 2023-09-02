@@ -21,7 +21,7 @@ const Button = styled.h2`
   list-style: none;
   display: flex;
   font-size: 20px;
-  background-color: rgba(7, 0, 27, 0.8);
+  background-color: rgba(0, 0, 0, 0); /* Set a transparent background color */
   padding: 10px;
   border: none;
   cursor: pointer;
@@ -38,11 +38,12 @@ const Button = styled.h2`
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <Link to="/"><Button>Home</Button></Link>
-      {/*Link to Portfolio Section*/}
-      <Link to="Portfolio"><Button>Portfolio</Button></Link>
+      <Link to="/" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
+        <Button>Home</Button></Link>
       <Button>About</Button>
       <Button>Contact</Button>
+      {/*Link to Portfolio Section*/}
+      <Link to="Portfolio" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}><Button>Portfolio</Button></Link>
    </NavbarContainer>
   )
 }

@@ -1,7 +1,6 @@
 //REACT 
-import React, { useState, useEffect } from 'react';
+import {useState, useEffect} from 'react';
 import styled, { keyframes } from 'styled-components';
-import  Link  from 'react-scroll';
 
 //PAGES
 import About from "./About";
@@ -11,17 +10,18 @@ import Contact from "./Contact"
 import BackgroundImg from '../assets/images/HomeBackground.png'
 
 
- const Section = styled.div`
+ const BackgroundSection = styled.div`
       height: 100vh;
       display: flex;
+      background-image: url(${BackgroundImg}); 
       justify-content: center;
       align-items: center;
+      display: flex;
+      background-position: center;
  `;
 
- const Background = styled.div`
-      display: flex;
-      background-image: url(${BackgroundImg});
-      background-position: center;
+ const Section = styled.div`
+      height: 100vh;
  `;
 
 
@@ -31,30 +31,64 @@ const typingAnimation = keyframes`
 `;
 
 const blinkCaretAnimation = keyframes`
-  from, to { border-color: transparent }
-  50% { border-color: rgb(0, 68, 255); }
 `;
 
 const Container = styled.div`
-  margin-top: 5%;
-  display: flex;
+  background-color: rgba(0, 0, 0, 0); /* Set a transparent background color */
 `;
 
+
 const Text = styled.div`
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0); /* Set a transparent background color */
+  text-shadow: 0 0 10px rgba(216, 0, 205, 0.5); /* Adjust the color and size for the glow effect */
   font-size: 50px;
+  color: #ffffff;
+  opacity: 100%;
   white-space: nowrap;
   display: flex;
   overflow: hidden;
-  border-right: .15em solid rgb(0, 24, 2);
+  border-right: .15em solid rgb(170, 22, 255);
   animation: ${typingAnimation} 3.5s steps(40, end),
              ${blinkCaretAnimation} 0.75s step-end infinite;
+  
+`;
+
+const BreakLine = styled.div`
+      margin-left: 25%;
+      width: 50%;
+      height: 2px; /* Set the height of the separate line */
+      background-color: rgba(255, 255, 255, 0.5); /* Color of the separate line */
 `;
 
 const SubText = styled.div`
+   margin-left: 15%;
+   background-color: rgba(0, 0, 0, 0); /* Set a transparent background color */
    font-size: large;
 `;
 
+const BtnPortfolio = styled.button`
+     margin: 10px;
+     margin-left: 18%;
+     font-size: 25px;
+     cursor: pointer;
 
+     background-color: transparent;
+     border-radius: 5px;
+     height: 50px;
+     width: 175px;
+`;
+
+const BtnContact = styled.button`
+     margin: 10px;
+     font-size: 25px;
+     cursor: pointer;
+
+     background-color: transparent;
+     border-radius: 5px;
+     height: 50px;
+     width: 175px;
+`;
 
 const Home = () => {
   const [showText, setShowText] = useState(false);
@@ -69,19 +103,21 @@ const Home = () => {
 
   return (
     <>
-    <Section id='home'>
-    <Container>
-       <Background>
-       <div>
+    <Section>
+    <BackgroundSection id='home'>
+       <Container>
          <Text>
-          {showText ? 'Welcome to my website' : ''}
+          {showText ? 'Welcome to my Portfolio' : ''}
          </Text>
-        <SubText>
-          My name is Louis and I am a fullstack developer
-        </SubText>
-       </div>
-       </Background>
-      </Container>
+           <BreakLine/>
+            <SubText>
+              My name is Louis and I am a fullstack developer
+            </SubText>
+            <BtnPortfolio>Portfolio</BtnPortfolio>
+            <BtnContact>Contact</BtnContact>
+       </Container>
+ 
+      </BackgroundSection>
       </Section>
         <Section>
           <About />

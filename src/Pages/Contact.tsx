@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const Section = styled.div`
-     height: 100vh;
+     height: 50vh;
      display: flex;
 `;
 
@@ -17,7 +17,7 @@ const Form = styled.form`
 `;
 
 const FormGroup = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 
 const Label = styled.label`
