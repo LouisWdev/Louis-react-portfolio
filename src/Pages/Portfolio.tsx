@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Slider from '../components/Slider';
 
 const Section = styled.div`
      height: 100vh
@@ -8,7 +7,7 @@ const Section = styled.div`
 const Portfolio = () => {
   return (
     <Section id="Portfolio">
-          <Slider />
+         <h1>Portfolio</h1>
     </Section>
   )
 }

@@ -1,7 +1,11 @@
+//STYLED COMPONENTS
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
-import Home from '../Pages/Home';
 
+//REACT ROUTER DOM
+import { Link } from 'react-router-dom';
+
+
+//STYLING
 const NavbarContainer = styled.div`
   background-color: rgba(7, 0, 27, 0.8);
   width: 100%;
@@ -22,6 +26,8 @@ const Button = styled.h2`
   border: none;
   cursor: pointer;
 
+
+
   &:hover {
     text-decoration: underline;
     color: gray;
@@ -32,10 +38,11 @@ const Button = styled.h2`
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <Link to="home"><Button>Home</Button></Link>
-      <Link to="Portfolio"><Button>Portfolio</Button></Link> 
-      <Link to="About"><Button>About</Button></Link>  
-      <Link to="Contact"><Button>Contact</Button></Link>
+      <Link to="/"><Button>Home</Button></Link>
+      {/*Link to Portfolio Section*/}
+      <Link to="Portfolio"><Button>Portfolio</Button></Link>
+      <Button>About</Button>
+      <Button>Contact</Button>
    </NavbarContainer>
   )
 }

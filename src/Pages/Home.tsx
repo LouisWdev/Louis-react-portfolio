@@ -3,18 +3,25 @@ import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import  Link  from 'react-scroll';
 
+//PAGES
+import About from "./About";
+import Contact from "./Contact"
+
 //ASSETS
 import BackgroundImg from '../assets/images/HomeBackground.png'
 
 
  const Section = styled.div`
       height: 100vh;
-      background-image: url(${BackgroundImg});
-      background-size: cover;
-      background-position: center;
       display: flex;
       justify-content: center;
       align-items: center;
+ `;
+
+ const Background = styled.div`
+      display: flex;
+      background-image: url(${BackgroundImg});
+      background-position: center;
  `;
 
 
@@ -47,6 +54,8 @@ const SubText = styled.div`
    font-size: large;
 `;
 
+
+
 const Home = () => {
   const [showText, setShowText] = useState(false);
 
@@ -59,18 +68,28 @@ const Home = () => {
   }, []);
 
   return (
+    <>
     <Section id='home'>
     <Container>
-      <div>
-        <Text>
+       <Background>
+       <div>
+         <Text>
           {showText ? 'Welcome to my website' : ''}
-        </Text>
+         </Text>
         <SubText>
           My name is Louis and I am a fullstack developer
         </SubText>
-      </div>
+       </div>
+       </Background>
       </Container>
-    </Section>
+      </Section>
+        <Section>
+          <About />
+        </Section>
+      <Section>
+        <Contact />
+      </Section>
+    </>
   );
 };
 
