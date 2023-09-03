@@ -18,6 +18,15 @@ import BackgroundImg from '../assets/images/HomeBackground.png'
       align-items: center;
       display: flex;
       background-position: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.5; /* Change the opacity value (0.7) as needed */
+  }
  `;
 
  const Section = styled.div`
@@ -30,7 +39,10 @@ const typingAnimation = keyframes`
          to { width: 100% }
 `;
 
-const blinkCaretAnimation = keyframes`
+// Keyframes for cursor animation
+const blinkCaret = keyframes`
+  from, to { border-color: transparent; }
+  50% { border-color: rgb(0, 68, 255); }
 `;
 
 const Container = styled.div`
@@ -41,22 +53,22 @@ const Container = styled.div`
 const Text = styled.div`
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0); /* Set a transparent background color */
-  text-shadow: 0 0 10px rgba(216, 0, 205, 0.5); /* Adjust the color and size for the glow effect */
+  text-shadow: 0 0 10px rgba(216, 0, 240, 1); /* Text shadow: horizontal-offset vertical-offset blur-radius color */
   font-size: 50px;
   color: #ffffff;
-  opacity: 100%;
-  white-space: nowrap;
-  display: flex;
+
+  font-size: 50px;
   overflow: hidden;
-  border-right: .15em solid rgb(170, 22, 255);
-  animation: ${typingAnimation} 3.5s steps(40, end),
-             ${blinkCaretAnimation} 0.75s step-end infinite;
-  
+  border-right: 0.15em solid rgb(0, 24, 2);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: ${typingAnimation} 3.5s steps(40, end), ${blinkCaret} 0.75s step-end infinite;
 `;
 
 const BreakLine = styled.div`
       margin-left: 25%;
-      width: 50%;
+      width: 40%;
       height: 2px; /* Set the height of the separate line */
       background-color: rgba(255, 255, 255, 0.5); /* Color of the separate line */
 `;
@@ -74,6 +86,7 @@ const BtnPortfolio = styled.button`
      cursor: pointer;
 
      background-color: transparent;
+     letter-spacing: 3px;
      border-radius: 5px;
      height: 50px;
      width: 175px;
@@ -85,6 +98,7 @@ const BtnContact = styled.button`
      cursor: pointer;
 
      background-color: transparent;
+     letter-spacing: 3px;
      border-radius: 5px;
      height: 50px;
      width: 175px;
@@ -107,7 +121,7 @@ const Home = () => {
     <BackgroundSection id='home'>
        <Container>
          <Text>
-          {showText ? 'Welcome to my Portfolio' : ''}
+          Welcome to my Portfolio
          </Text>
            <BreakLine/>
             <SubText>
@@ -116,9 +130,9 @@ const Home = () => {
             <BtnPortfolio>Portfolio</BtnPortfolio>
             <BtnContact>Contact</BtnContact>
        </Container>
- 
       </BackgroundSection>
       </Section>
+      
         <Section>
           <About />
         </Section>
