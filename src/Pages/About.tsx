@@ -1,7 +1,37 @@
+//REACT 
 import styled from 'styled-components';
 
+//IMG
+import AboutmeImg from '../assets/images/VaporwaveRoom.png'
+
 const Section = styled.div`
-     height: 100vh
+     height: auto;
+`;
+
+const GlowingImage = styled.img`
+   height: 500px;
+
+
+  border: 2px solid transparent;
+  margin-top: 100px;
+  border-radius: 10px;
+  margin-right: 50px;
+  margin-left: 400px;
+  transition: border-color 0.3s ease-in-out;
+  animation: glow 1s infinite alternate;
+  border-color: #00aaff; /* Change this to your desired glowing color */
+
+
+  @keyframes glow {
+    0% {
+      border-color: transparent;
+      box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+    }
+    100% {
+      border-color: #00aaff; /* Change this to your desired glowing color */
+      box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 30px rgba(0, 170, 255, 0.6), 0 0 40px rgba(0, 170, 255, 0.4);
+    }
+  }
 `;
 
 const SectionContainer = styled.div`
@@ -21,25 +51,34 @@ const Description = styled.p`
   line-height: 1.6;
 `;
 
-const ProfileImage = styled.img`
-  max-width: 200px;
-  border-radius: 50%;
-  margin: 20px auto;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-`;
-
 
 const About = () => {
   return (
-    <Section id='About'>
+    <Section>
+        <GlowingImage src={AboutmeImg} alt='AboutMeImg'/>
     <SectionContainer>
+      
       <Title>About Me</Title>
-      <ProfileImage
-        src="profile.jpg" // Replace with your profile image URL
-        alt="Profile"
-      />
       <Description>
-          So I started coding from a young age and was already amazed by how coding works and so I strive to become a 10x developer. Besides coding I also do fitness and long distance running.
+          I started coding from a young age and was already amazed by how coding works.<br /> 
+          And so I strive to become a 10x developer.<br />
+          Besides coding I also do fitness and long distance running.
+      </Description>
+      <Title>Next Gen</Title>
+      <Description>
+          Throughout my journey of Learning how to code I have learned how to use different technologies.<br /> 
+          And now I have a good understanding of these powerful last generation technologies<br />
+          Some of these you may know like NextJS, React, etc. These frameworks are an essential part of what a business needs to succeed in the modern sphere of IT.
+      </Description>
+      <Title>Crypto</Title>
+      <Description>
+          The decentralized crypto market has been booming and lots of people and businesses are using it and yet there are people that are missing as for me<br /> 
+          I have been studying this market ever since it has been becoming mainstream and am planning on working on some projects that has to do with this trend<br />
+      </Description>
+      <Title>AI</Title>
+      <Description>
+          From a young age I have had a passion and interest in sci fi and I fell in love with the genre, And I have been waiting for the chance to learn about AI and now that it has been<br />
+          becoming popular I have been having a keen interest in AI technology and I see it as an essential part in humanity's strive towards the future so I am expecting to be working on some AI projects. 
       </Description>
     </SectionContainer>
     </Section>

@@ -1,5 +1,4 @@
 //REACT 
-import {useState, useEffect} from 'react';
 import styled, { keyframes } from 'styled-components';
 
 //PAGES
@@ -9,29 +8,26 @@ import Contact from "./Contact"
 //ASSETS
 import BackgroundImg from '../assets/images/HomeBackground.png'
 
+//REACT ROUTER 
+import { Link } from 'react-router-dom';
 
- const BackgroundSection = styled.div`
-      height: 100vh;
-      display: flex;
-      background-image: url(${BackgroundImg}); 
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      background-position: center;
 
-      &::before {
-        content: "";
-        position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    opacity: 0.5; /* Change the opacity value (0.7) as needed */
-  }
- `;
 
  const Section = styled.div`
       height: 100vh;
  `;
+
+ const BackgroundSection = styled.div`
+      height: 100vh;
+      display: flex;
+      background-image: url(${BackgroundImg});
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      background-position: center;
+ `;
+
+
 
 
 const typingAnimation = keyframes`
@@ -41,12 +37,12 @@ const typingAnimation = keyframes`
 
 // Keyframes for cursor animation
 const blinkCaret = keyframes`
-  from, to { border-color: transparent; }
-  50% { border-color: rgb(0, 68, 255); }
+   from, to { border-color: transparent; }
+   50% { border-color: rgb(0, 68, 255); }
 `;
 
 const Container = styled.div`
-  background-color: rgba(0, 0, 0, 0); /* Set a transparent background color */
+   background-color: rgba(0, 0, 0, 0); /* Set a transparent background color */
 `;
 
 
@@ -74,14 +70,15 @@ const BreakLine = styled.div`
 `;
 
 const SubText = styled.div`
-   margin-left: 15%;
-   background-color: rgba(0, 0, 0, 0); /* Set a transparent background color */
-   font-size: large;
+     margin-left: 16%;
+     background-color: rgba(0, 0, 0, 0); /* Set a transparent background color */
+     text-shadow: 0 0 10px rgba(216, 0, 240, 1); /* Text shadow: horizontal-offset vertical-offset blur-radius color */
+     font-size: 20px;
 `;
 
 const BtnPortfolio = styled.button`
      margin: 10px;
-     margin-left: 18%;
+     margin-left: 20%;
      font-size: 25px;
      cursor: pointer;
 
@@ -90,6 +87,11 @@ const BtnPortfolio = styled.button`
      border-radius: 5px;
      height: 50px;
      width: 175px;
+
+     &:hover {
+       background-color: #ffffff;
+       color: black;
+  }
 `;
 
 const BtnContact = styled.button`
@@ -102,18 +104,14 @@ const BtnContact = styled.button`
      border-radius: 5px;
      height: 50px;
      width: 175px;
+
+     &:hover {
+       background-color: #ffffff;
+       color: black;
+  }
 `;
 
 const Home = () => {
-  const [showText, setShowText] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowText(true);
-    }, 500); // Adjust the delay to match the cursor animation
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <>
@@ -127,18 +125,21 @@ const Home = () => {
             <SubText>
               My name is Louis and I am a fullstack developer
             </SubText>
-            <BtnPortfolio>Portfolio</BtnPortfolio>
+             <Link to="/Portfolio" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
+                <BtnPortfolio>Portfolio</BtnPortfolio>
+              </Link>
             <BtnContact>Contact</BtnContact>
        </Container>
-      </BackgroundSection>
+       </BackgroundSection>
       </Section>
-      
-        <Section>
+       {/*ABOUT ME SECTION*/}
+   
           <About />
-        </Section>
-      <Section>
+    
+        {/*CONTACT SECTION*/}
+  
         <Contact />
-      </Section>
+
     </>
   );
 };

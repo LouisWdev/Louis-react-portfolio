@@ -2,39 +2,48 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const Section = styled.div`
-     height: 50vh;
+     height: 100vh;
      display: flex;
 `;
 
 const FormContainer = styled.div`
-  max-width: 400px;
   margin: 0 auto;
+  margin-top: 400px;
 `;
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
+  margin-top: 10%;
 `;
 
 const FormGroup = styled.div`
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 `;
 
 const Label = styled.label`
   font-size: 14px;
   margin-bottom: 5px;
+  margin-right: 5px;
 `;
 
-const Input = styled.input`
+const NameInput = styled.input`
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 `;
 
-const TextArea = styled.textarea`
+const EmailInput = styled.input`
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+`;
+
+const MessageInput = styled.input`
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
 `;
 
 const Button = styled.button`
@@ -50,61 +59,33 @@ const Button = styled.button`
 
 
 const Contact = () => {
-
-   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData); // You can replace this with your form submission logic
-  };
-
-
   return (
-   <Section id="Contact">
+    <Section>
     <FormContainer>
-      <Form onSubmit={handleSubmit}>
+      <Form>
         <FormGroup>
           <Label htmlFor="name">Name</Label>
-          <Input
+          <NameInput
             type="text"
             id="name"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
             required
           />
         </FormGroup>
         <FormGroup>
           <Label htmlFor="email">Email</Label>
-          <Input
+          <EmailInput
             type="email"
             id="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
             required
           />
         </FormGroup>
         <FormGroup>
           <Label htmlFor="message">Message</Label>
-          <TextArea
+          <MessageInput
             id="message"
             name="message"
-            value={formData.message}
-            onChange={handleChange}
-            rows="4"
             required
           />
         </FormGroup>

@@ -27,7 +27,6 @@ const Button = styled.h2`
   cursor: pointer;
 
 
-
   &:hover {
     text-decoration: underline;
     color: gray;
@@ -39,7 +38,8 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <Link to="/" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
-        <Button>Home</Button></Link>
+        <Button>Home</Button>
+       </Link>
       <Button>About</Button>
       <Button>Contact</Button>
       {/*Link to Portfolio Section*/}
