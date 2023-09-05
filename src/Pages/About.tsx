@@ -72,7 +72,7 @@ const About = () => {
       </Description>
       <Title>Crypto</Title>
       <Description>
-          The decentralized crypto market has been booming and lots of people and businesses are using it and yet there are people that are missing as for me<br /> 
+          The decentralized crypto market has been booming and lots of people and businesses are using it and yet there are people that are missing, as for me<br /> 
           I have been studying this market ever since it has been becoming mainstream and am planning on working on some projects that has to do with this trend<br />
       </Description>
       <Title>AI</Title>
