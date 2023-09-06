@@ -54,7 +54,7 @@ const Description = styled.p`
 
 const About = () => {
   return (
-    <Section>
+    <Section id="About">
         <GlowingImage src={AboutmeImg} alt='AboutMeImg'/>
     <SectionContainer>
       

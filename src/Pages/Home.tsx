@@ -115,8 +115,8 @@ const Home = () => {
 
   return (
     <>
-    <Section>
-    <BackgroundSection id='home'>
+    <Section id='Home'>
+    <BackgroundSection>
        <Container>
          <Text>
           Welcome to my Portfolio

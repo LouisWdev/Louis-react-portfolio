@@ -81,7 +81,7 @@ const Button = styled.button`
 
 const Contact = () => {
   return (
-    <Section>
+    <Section id='Contact'>
     <FormContainer>
       <Form>
         <FormGroup>

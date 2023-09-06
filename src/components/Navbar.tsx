@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 //REACT ROUTER DOM
 import { Link } from 'react-router-dom';
+import {Link as Link2 } from 'react-scroll';
 
 
 //STYLING
@@ -35,13 +36,35 @@ const Button = styled.h2`
 
 
 const Navbar = () => {
+  window.addEventListener("scroll", windowScroll);
+
+   /**
+   * Window scroll
+   */
+  function windowScroll() {
+    const navbar = document.getElementById("navbar");
+    if (
+      document.body.scrollTop >= 50 ||
+      document.documentElement.scrollTop >= 50
+    ) {
+      navbar.classList.add("is-sticky");
+    } else {
+      navbar.classList.remove("is-sticky");
+    }
+  }
+
+
   return (
-    <NavbarContainer>
+    <NavbarContainer className='navbar' id='navbar'>
       <Link to="/" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
         <Button>Home</Button>
        </Link>
-      <Button>About</Button>
-      <Button>Contact</Button>
+      <Link2 to="About" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
+        <Button>About</Button>
+      </Link2>
+      <Link2 to="Contact" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
+         <Button>Contact</Button>
+      </Link2>
       {/*Link to Portfolio Section*/}
       <Link to="Portfolio" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}><Button>Portfolio</Button></Link>
    </NavbarContainer>

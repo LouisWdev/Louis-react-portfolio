@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 //PORTFOLIO IMAGES
+import krypt from '../assets/images/ProjectImages/Blockchain.png';
+
+//REACT ROUTER
+import { Link } from 'react-router-dom';
 
 const Section = styled.div`
      height: auto;
@@ -23,21 +27,48 @@ const TitleSubText = styled.h2`
 `;
 
 const Container = styled.div`
-          margin-top: 10%;
+          margin-top: 5%;
           margin-left: 30%;
+          justify-content: flex-start;
 `;
 
+const Image = styled.img`
+     width: 500px;
+     display: flex;   
+`;
 
-
-
-const Image = styled.img``;
-
-const ParagraphTitle = styled.div``;
+const ParagraphTitle = styled.div`
+     font-size: 30px;
+     display: flex;
+`;
 
 const TextParagraph = styled.div`
+     font-size: 16px;
+     width: 400px;
+     margin: 10px;
 `;
 
-const VisitButton = styled.div``;
+const TextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+const VisitButton = styled.button`
+     margin-top: 5px;
+     font-size: large;
+     cursor: pointer;
+
+     background-color: transparent;
+     letter-spacing: 3px;
+     border-radius: 5px;
+     height: 50px;
+     width: 175px;
+
+     &:hover {
+       background-color: #ffffff;
+       color: black;
+  }
+`;
 
 const Portfolio = () => {
   return (
@@ -48,10 +79,14 @@ const Portfolio = () => {
 
         {/*Project 1*/}
          <Container>
-             <ParagraphTitle>Project 1</ParagraphTitle>
-             <TextParagraph>Lore Ipsum Some long text I guess to test if the text paragraph works or something like that</TextParagraph>
-             <Image></Image>
-             <VisitButton></VisitButton>
+            <TextContainer>
+               <ParagraphTitle>Blockchain App</ParagraphTitle>
+               <TextParagraph>A web app built with tailwindCSS. It is a crypto wallet web app</TextParagraph>
+             </TextContainer>
+                <Image src={krypt}></Image>
+             <Link to="/Krypt">
+               <VisitButton>View Project</VisitButton>
+             </Link>
          </Container>
 
          {/*Project 2*/}
@@ -59,7 +94,7 @@ const Portfolio = () => {
              <ParagraphTitle>Project 2</ParagraphTitle>
              <TextParagraph>Lore Ipsum Some long text I guess to test if the text paragraph works or something like that</TextParagraph>
              <Image></Image>
-             <VisitButton></VisitButton>
+             <VisitButton>View Project</VisitButton>
          </Container>
 
          {/*Project 3*/}
@@ -67,7 +102,7 @@ const Portfolio = () => {
              <ParagraphTitle>Project 3</ParagraphTitle>
              <TextParagraph>Lore Ipsum Some long text I guess to test if the text paragraph works or something like that</TextParagraph>
              <Image></Image>
-             <VisitButton></VisitButton>
+             <VisitButton>View Project</VisitButton>
          </Container>
     </Section>
   )
