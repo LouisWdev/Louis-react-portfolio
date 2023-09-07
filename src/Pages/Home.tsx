@@ -7,11 +7,25 @@ import Contact from "./Contact"
 
 //ASSETS
 import BackgroundImg from '../assets/images/HomeBackground.png'
+import Opacity from '../assets/images/opacity.png'
 
 //REACT ROUTER 
 import { Link } from 'react-router-dom';
 
-
+const pulse = keyframes`
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+`;
 
  const Section = styled.div`
       height: 100vh;
@@ -21,14 +35,22 @@ import { Link } from 'react-router-dom';
       height: 100vh;
       display: flex;
       background-image: url(${BackgroundImg});
+      z-index: 1;
       justify-content: center;
       align-items: center;
       display: flex;
       background-position: center;
  `;
 
-
-
+const GlowingMiddle = styled.div`
+  width: 1000px; /* Adjust the size as needed */
+  height: 750px; /* Adjust the size as needed */
+  border-radius: 50%;
+  position: absolute;
+  background: radial-gradient(circle, rgba(167, 74, 255, 0.8) 0%, transparent 100%);
+  animation: ${pulse} 2s infinite;
+  z-index: -1; /* Place it above the background image */
+`;
 
 const typingAnimation = keyframes`
          from { width: 0 }
@@ -116,7 +138,8 @@ const Home = () => {
   return (
     <>
     <Section id='Home'>
-    <BackgroundSection>
+        <BackgroundSection>
+          <GlowingMiddle />
        <Container>
          <Text>
           Welcome to my Portfolio
