@@ -6,26 +6,10 @@ import About from "./About";
 import Contact from "./Contact"
 
 //ASSETS
-import BackgroundImg from '../assets/images/HomeBackground.png'
-import Opacity from '../assets/images/opacity.png'
+import BackgroundImg from '../assets/images/HomeBackgroundEdited.png'
 
 //REACT ROUTER 
 import { Link } from 'react-router-dom';
-
-const pulse = keyframes`
-  0% {
-    transform: scale(1);
-    opacity: 0.6;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 0.3;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.6;
-  }
-`;
 
  const Section = styled.div`
       height: 100vh;
@@ -35,22 +19,13 @@ const pulse = keyframes`
       height: 100vh;
       display: flex;
       background-image: url(${BackgroundImg});
-      z-index: 1;
+      z-index: -1;
       justify-content: center;
       align-items: center;
       display: flex;
       background-position: center;
+      opacity: 100%;
  `;
-
-const GlowingMiddle = styled.div`
-  width: 1000px; /* Adjust the size as needed */
-  height: 750px; /* Adjust the size as needed */
-  border-radius: 50%;
-  position: absolute;
-  background: radial-gradient(circle, rgba(167, 74, 255, 0.8) 0%, transparent 100%);
-  animation: ${pulse} 2s infinite;
-  z-index: -1; /* Place it above the background image */
-`;
 
 const typingAnimation = keyframes`
          from { width: 0 }
@@ -74,6 +49,7 @@ const Text = styled.div`
   text-shadow: 0 0 10px rgba(216, 0, 240, 1); /* Text shadow: horizontal-offset vertical-offset blur-radius color */
   font-size: 50px;
   color: #ffffff;
+  margin-top: 10px;
 
   font-size: 50px;
   overflow: hidden;
@@ -82,6 +58,7 @@ const Text = styled.div`
   margin: 0 auto;
   letter-spacing: 0.15em;
   animation: ${typingAnimation} 3.5s steps(40, end), ${blinkCaret} 0.75s step-end infinite;
+  z-index: 1;
 `;
 
 const BreakLine = styled.div`
@@ -89,16 +66,19 @@ const BreakLine = styled.div`
       width: 40%;
       height: 2px; /* Set the height of the separate line */
       background-color: rgba(255, 255, 255, 0.5); /* Color of the separate line */
+      z-index: 1;
 `;
 
 const SubText = styled.div`
      margin-left: 16%;
      background-color: rgba(0, 0, 0, 0); /* Set a transparent background color */
      text-shadow: 0 0 10px rgba(216, 0, 240, 1); /* Text shadow: horizontal-offset vertical-offset blur-radius color */
+     z-index: 1;
      font-size: 20px;
 `;
 
 const BtnPortfolio = styled.button`
+     z-index: 1;
      margin: 10px;
      margin-left: 20%;
      font-size: 25px;
@@ -117,6 +97,7 @@ const BtnPortfolio = styled.button`
 `;
 
 const BtnContact = styled.button`
+     z-index: 1;
      margin: 10px;
      font-size: 25px;
      cursor: pointer;
@@ -139,7 +120,6 @@ const Home = () => {
     <>
     <Section id='Home'>
         <BackgroundSection>
-          <GlowingMiddle />
        <Container>
          <Text>
           Welcome to my Portfolio
@@ -152,7 +132,7 @@ const Home = () => {
                 <BtnPortfolio>Portfolio</BtnPortfolio>
               </Link>
             <BtnContact>Contact</BtnContact>
-       </Container>
+        </Container>
        </BackgroundSection>
       </Section>
        {/*ABOUT ME SECTION*/}
