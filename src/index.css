@@ -3,3 +3,15 @@
    color: white;
    font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Remove scrollbars */
+body {
+  overflow: hidden;
+}
+
+/* If you want to keep scrollbars for specific elements */
+/* For example, if you have a modal that needs to scroll */
+/* You can use a class to enable scrolling for that specific element */
+.allow-scroll {
+  overflow: auto;
+}

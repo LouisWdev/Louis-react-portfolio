@@ -9,6 +9,9 @@ import Portfolio from './Pages/Portfolio';
 //REACT ROUTER DOM
 import { Route, Routes } from "react-router-dom";
 
+//CSS
+import './index.css'
+
 
 const App = () => {
   return (

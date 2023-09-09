@@ -10,6 +10,7 @@ import BackgroundImg from '../assets/images/HomeBackgroundEdited.png'
 
 //REACT ROUTER 
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
  const Section = styled.div`
       height: 100vh;
@@ -115,15 +116,24 @@ const BtnContact = styled.button`
 `;
 
 const Home = () => {
+  useEffect(() => {
+    // Add this code to remove the scrollbar when the component mounts
+    document.body.style.overflow = 'hidden';
+
+    // Remove the scrollbar when the component unmounts
+    return () => {
+      document.body.style.overflow = 'visible';
+    };
+  }, []);
 
   return (
     <>
     <Section id='Home'>
         <BackgroundSection>
-       <Container>
-         <Text>
-          Welcome to my Portfolio
-         </Text>
+         <Container>
+            <Text>
+             Welcome to my Portfolio
+             </Text>
            <BreakLine/>
             <SubText>
               My name is Louis and I am a fullstack developer
