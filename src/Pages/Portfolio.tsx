@@ -88,19 +88,20 @@ const Portfolio = () => {
                <VisitButton>View Project</VisitButton>
              </Link>
          </Container>
-
+ 
          {/*Project 2*/}
          <Container>
-             <ParagraphTitle>Project 2</ParagraphTitle>
-             <TextParagraph>Lore Ipsum Some long text I guess to test if the text paragraph works or something like that</TextParagraph>
+             <ParagraphTitle>Responsive Admin panel</ParagraphTitle>
+             <TextParagraph>This admin panel was built with html and CSS. It is styled but isn't functional.</TextParagraph>
              <Image></Image>
              <VisitButton>View Project</VisitButton>
          </Container>
 
          {/*Project 3*/}
          <Container>
-             <ParagraphTitle>Project 3</ParagraphTitle>
-             <TextParagraph>Lore Ipsum Some long text I guess to test if the text paragraph works or something like that</TextParagraph>
+             <ParagraphTitle>Typescript e-commerce store</ParagraphTitle>
+             <TextParagraph>One of my biggest projects in Java is this cool Typescript store. 
+               To me it is one of my most interesting projects. So it is built in TypeScript Java.</TextParagraph>
              <Image></Image>
              <VisitButton>View Project</VisitButton>
          </Container>
