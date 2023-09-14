@@ -63,10 +63,10 @@ const Text = styled.div`
 `;
 
 const BreakLine = styled.div`
-      margin-left: 25%;
-      width: 40%;
+      margin-left: 14%;
+      width: 60%;
       height: 2px; /* Set the height of the separate line */
-      background-color: rgba(255, 255, 255, 0.5); /* Color of the separate line */
+      background-color: rgba(116, 116, 116, 0.5); /* Color of the separate line */
       z-index: 1;
 `;
 

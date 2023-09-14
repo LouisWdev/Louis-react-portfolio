@@ -16,8 +16,8 @@ const PortfolioTitle = styled.h1`
 `;
 
 const BreakLine = styled.div`
-      margin-left: 28%;
-      width: 40%;
+      margin-left: 24%;
+      width: 50%;
       height: 2px; /* Set the height of the separate line */
       background-color: rgba(255, 255, 255, 0.5); /* Color of the separate line */
 `;
