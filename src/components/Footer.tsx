@@ -6,8 +6,8 @@ const FooterContainer = styled.div`
      align-items: center;
      background-color: transparent;
      bottom: 0%;
-     margin-bottom: 10px;
-     margin-left: 10px;
+     margin-bottom: 20px;
+     margin-left: 40px;
 `;
 
 const Text = styled.div`
