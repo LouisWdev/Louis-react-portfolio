@@ -10,6 +10,7 @@ const Section = styled.div`
 
 const GlowingImage = styled.img`
    height: 500px;
+   z-index: -1;
 
 
   border: 2px solid transparent;
@@ -17,6 +18,7 @@ const GlowingImage = styled.img`
   border-radius: 10px;
   margin-right: 50px;
   margin-left: 400px;
+  
   transition: border-color 0.3s ease-in-out;
   animation: glow 1s infinite alternate;
   border-color: #00aaff; /* Change this to your desired glowing color */
