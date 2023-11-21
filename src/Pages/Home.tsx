@@ -79,29 +79,29 @@ const SubText = styled.div`
 `;
 
 const BtnPortfolio = styled.button`
-     z-index: 1;
      margin: 10px;
      margin-left: 20%;
      font-size: 25px;
      cursor: pointer;
 
      background-color: transparent;
+     border: 3px solid black;
      letter-spacing: 3px;
      border-radius: 5px;
      height: 50px;
      width: 175px;
 
      &:hover {
-       background-color: #ffffff;
-       color: black;
+       background-color: black;
+       color: white;
   }
 `;
 
 const BtnContact = styled.button`
-     z-index: 1;
      margin: 10px;
      font-size: 25px;
      cursor: pointer;
+     border: 3px solid black;
 
      background-color: transparent;
      letter-spacing: 3px;
@@ -110,8 +110,8 @@ const BtnContact = styled.button`
      width: 175px;
 
      &:hover {
-       background-color: #ffffff;
-       color: black;
+       background-color: black;
+       color: white;
   }
 `;
 

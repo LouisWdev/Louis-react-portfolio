@@ -58,6 +58,7 @@ const VisitButton = styled.button`
      font-size: large;
      cursor: pointer;
 
+     border: 2px solid white;
      background-color: transparent;
      letter-spacing: 3px;
      border-radius: 5px;
