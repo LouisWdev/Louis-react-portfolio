@@ -8,21 +8,30 @@ const Section = styled.div`
      height: auto;
 `;
 
+const Container = styled.div`
+     position: relative;
+     margin-top: 100px;
+     margin-right: 50px;
+     margin-left: 400px;
+`;
+
 const GlowingImage = styled.img`
-   height: 500px;
-   z-index: -1;
-
-
+   height: 50vh;
+  width: 60vw;
+  z-index: -1;
+  background-image: url(${AboutmeImg});
   border: 2px solid transparent;
-  margin-top: 100px;
   border-radius: 10px;
-  margin-right: 50px;
-  margin-left: 400px;
+
+  /* Centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   
   transition: border-color 0.3s ease-in-out;
   animation: glow 1s infinite alternate;
   border-color: #00aaff; /* Change this to your desired glowing color */
-
 
   @keyframes glow {
     0% {
@@ -57,7 +66,10 @@ const Description = styled.p`
 const About = () => {
   return (
     <Section id="About">
-        <GlowingImage src={AboutmeImg} alt='AboutMeImg'/>
+      <Container>
+        <GlowingImage>
+        </GlowingImage>
+      </Container>
     <SectionContainer>
       
       <Title>About Me</Title>
