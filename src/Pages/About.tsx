@@ -24,7 +24,6 @@ const GlowingImage = styled.img`
   border-radius: 10px;
 
   /* Centering */
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -67,8 +66,7 @@ const About = () => {
   return (
     <Section id="About">
       <Container>
-        <GlowingImage>
-        </GlowingImage>
+        <GlowingImage />
       </Container>
     <SectionContainer>
       
