@@ -16,17 +16,12 @@ const Container = styled.div`
 `;
 
 const GlowingImage = styled.img`
-   height: 50vh;
+  height: 50vh;
   width: 60vw;
-  z-index: -1;
   background-image: url(${AboutmeImg});
   border: 2px solid transparent;
   border-radius: 10px;
-
-  /* Centering */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 1;
   
   transition: border-color 0.3s ease-in-out;
   animation: glow 1s infinite alternate;

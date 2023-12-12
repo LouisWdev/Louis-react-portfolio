@@ -14,6 +14,7 @@ const NavbarContainer = styled.div`
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
   position: fixed;
+  z-index: 2;
   top: 0;
 `;
 
