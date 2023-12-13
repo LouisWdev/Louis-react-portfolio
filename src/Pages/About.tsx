@@ -27,6 +27,8 @@ const GlowingImage = styled.img`
   animation: glow 1s infinite alternate;
   border-color: #00aaff; /* Change this to your desired glowing color */
 
+  
+
   @keyframes glow {
     0% {
       border-color: transparent;

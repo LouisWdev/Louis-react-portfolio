@@ -66,7 +66,7 @@ const BreakLine = styled.div`
       margin-left: 14%;
       width: 60%;
       height: 2px; /* Set the height of the separate line */
-      background-color: rgba(116, 116, 116, 0.5); /* Color of the separate line */
+      background-color: rgba(0, 0, 0, 0.5); /* Color of the separate line */
       z-index: 1;
 `;
 
@@ -76,6 +76,7 @@ const SubText = styled.div`
      text-shadow: 0 0 10px rgba(216, 0, 240, 1); /* Text shadow: horizontal-offset vertical-offset blur-radius color */
      z-index: 1;
      font-size: 20px;
+     font-weight: 700;
 `;
 
 const BtnPortfolio = styled.button`
@@ -84,7 +85,8 @@ const BtnPortfolio = styled.button`
      font-size: 25px;
      cursor: pointer;
 
-     background-color: transparent;
+     color: black;
+     background-color: darkgray;
      border: 3px solid black;
      letter-spacing: 3px;
      border-radius: 5px;
@@ -101,9 +103,10 @@ const BtnContact = styled.button`
      margin: 10px;
      font-size: 25px;
      cursor: pointer;
+     color: black;
+     background-color: darkgray;
      border: 3px solid black;
 
-     background-color: transparent;
      letter-spacing: 3px;
      border-radius: 5px;
      height: 50px;
