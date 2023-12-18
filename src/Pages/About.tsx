@@ -73,7 +73,7 @@ const About = () => {
           And so I strive to become a 10x developer.<br />
           Besides coding I also do fitness and long distance running.
       </Description>
-      <Title>Next Gen</Title>
+      <Title>Next Generation</Title>
       <Description>
           Throughout my journey of Learning how to code I have learned how to use different technologies.<br /> 
           And now I have a good understanding of these powerful last generation technologies<br />
