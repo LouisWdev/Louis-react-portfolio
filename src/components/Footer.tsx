@@ -14,13 +14,11 @@ const FooterContainer = styled.div`
 `;
 
 const Text = styled.div`
-   display: inline;
    background-color: transparent;
 `;
 
 const Socials = styled.div`
-   display: inline;
-   text-align: end;
+   background-color: transparent;
 `;
 
 const Footer = () => {
@@ -28,6 +26,7 @@ const Footer = () => {
     <FooterContainer>
              <Text>© 2023 Louis W. All rights reserved.</Text>
              <Socials>My Socials</Socials>
+
     </FooterContainer>
   )
 }

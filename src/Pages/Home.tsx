@@ -86,7 +86,7 @@ const BtnPortfolio = styled.button`
      cursor: pointer;
 
      color: black;
-     background-color: darkgray;
+     background-color: #6846ff;
      border: 3px solid black;
      letter-spacing: 3px;
      border-radius: 5px;
@@ -104,7 +104,7 @@ const BtnContact = styled.button`
      font-size: 25px;
      cursor: pointer;
      color: black;
-     background-color: darkgray;
+     background-color: #6846ff;
      border: 3px solid black;
 
      letter-spacing: 3px;
