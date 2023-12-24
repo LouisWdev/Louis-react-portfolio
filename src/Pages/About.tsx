@@ -84,7 +84,9 @@ const About = () => {
           The decentralized crypto market has been booming and lots of people and businesses are using it and yet there are people that are missing, as for me<br /> 
           I have been studying this market ever since it has been becoming mainstream and am planning on working on some projects that has to do with this trend<br />
       </Description>
-      <Title>AI</Title>
+      <Title>
+        AI
+      </Title>
       <Description>
           From a young age I have had a passion and interest in sci fi and I fell in love with the genre, And I have been waiting for the chance to learn about AI and now that it has been<br />
           becoming popular I have been having a keen interest in AI technology and I see it as an essential part in humanity's strive towards the future so I am expecting to be working on some AI projects. 

@@ -122,9 +122,9 @@ const Home = () => {
 
   return (
     <>
-    <Section id='Home'>
+      <Section id='Home'>
         <BackgroundSection>
-         <Container>
+          <Container>
             <Text>
              Welcome to my Portfolio
              </Text>
@@ -138,17 +138,14 @@ const Home = () => {
              <Link2 to="Contact" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
                 <BtnContact>Contact</BtnContact>
             </Link2> 
-        </Container>
-       </BackgroundSection>
+          </Container>
+         </BackgroundSection>
       </Section>
-       {/*ABOUT ME SECTION*/}
-   
-          <About />
+        {/*ABOUT ME SECTION*/}
+        <About />
     
         {/*CONTACT SECTION*/}
-  
         <Contact />
-
     </>
   );
 };

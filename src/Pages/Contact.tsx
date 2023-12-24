@@ -82,7 +82,7 @@ const Button = styled.button`
 const Contact = () => {
   return (
     <Section id='Contact'>
-    <FormContainer>
+     <FormContainer>
       <Form>
         <FormGroup>
           <Label htmlFor="name">Name</Label>
@@ -112,7 +112,7 @@ const Contact = () => {
         </FormGroup>
         <Button type="submit">Submit</Button>
       </Form>
-    </FormContainer>
+     </FormContainer>
     </Section>
   )
 }
