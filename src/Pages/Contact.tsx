@@ -17,6 +17,7 @@ const Form = styled.form`
 
 const FormGroup = styled.div`
   margin-bottom: 5px;
+
 `;
 
 const Label = styled.label`
@@ -58,8 +59,7 @@ const MessageInput = styled.input`
   height: 200px;
   font-size: 20px;
   margin-bottom: 10px;
-  display: block;
-
+  display: flex;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
