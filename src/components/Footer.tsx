@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { Link } from 'react-router-dom';
 
 const FooterContainer = styled.div`
      display: inline-block;
@@ -46,15 +47,21 @@ const Footer = () => {
               <Text>© 2023 Louis W. All rights reserved.</Text>
               <Socials>My Socials 
                 <TwitterIconContainer>
+                   <Link to="https://twitter.com/LouisWDev">
                       <TwitterIcon />
+                   </Link>
                 </TwitterIconContainer>
 
                 <LinkedInIconContainer>
-                      <LinkedInIcon />
+                     <Link to="https://www.linkedin.com/in/louis-wackenier-37463b255/">
+                       <LinkedInIcon />
+                     </Link>
                 </LinkedInIconContainer>
 
                 <GitHubIconContainer>
-                    <GitHubIcon/>
+                   <Link to="https://github.com/LouisWackenier">
+                      <GitHubIcon/>
+                   </Link>
                 </GitHubIconContainer>
               </Socials>
       </FooterContainer>
