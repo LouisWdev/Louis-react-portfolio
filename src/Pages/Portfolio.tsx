@@ -51,6 +51,7 @@ const TextParagraph = styled.div`
 const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 `;
 
 const VisitButton = styled.button`
@@ -64,6 +65,8 @@ const VisitButton = styled.button`
      border-radius: 5px;
      height: 50px;
      width: 175px;
+
+     transition: background-color 0.5s;
 
      &:hover {
        background-color: #ffffff;
