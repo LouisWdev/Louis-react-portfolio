@@ -49,13 +49,28 @@ const SectionContainer = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 28px;
-  margin-bottom: 20px;
+   font-size: 28px;
+   margin-bottom: 20px;
+   animation: textGlow 5s infinite alternate;
+
+   @keyframes textGlow {
+       0% {
+        color: #54d7ee;
+       }
+
+       50% {
+        color: #068686;
+       }
+
+       100% {
+        color: #5470ee;
+       }
+   }
 `;
 
 const Description = styled.p`
-  font-size: 16px;
-  line-height: 1.6;
+   font-size: 16px;
+   line-height: 1.6;
 `;
 
 

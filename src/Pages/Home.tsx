@@ -94,6 +94,7 @@ const BtnPortfolio = styled.button`
      width: 175px;
 
      transition: background-color 0.3s;
+     transition: color 0.5s;
 
      &:hover {
        background-color: black;
@@ -115,6 +116,7 @@ const BtnContact = styled.button`
      width: 175px;
 
      transition: background-color 0.3s;
+     transition: color 0.5s;
 
      &:hover {
        background-color: black;

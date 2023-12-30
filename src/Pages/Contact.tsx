@@ -83,13 +83,21 @@ const Button = styled.button`
   
 `;
 
+const Context = styled.h3`
+    width: 25vw;
+`;
+
   
 
 
 const Contact = () => {
   return (
     <Section id='Contact'>
+      
      <FormContainer>
+      <Context>
+        If you have any questions or wish to get in contact with me, Please feel free to send a email.
+      </Context>
       <Form>
         <FormGroup>
           <Label htmlFor="name">Name</Label>
