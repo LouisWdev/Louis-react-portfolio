@@ -2,7 +2,10 @@
 import styled from 'styled-components';
 
 //IMG
-import AboutmeImg from '../assets/images/VaporwaveRoom.png'
+import AboutmeImg from '../assets/images/VaporwaveRoom.png';
+import NextGenImg from '../assets/images/Next-gen-image.png';
+import CryptoImg from '../assets/images/crypto-image.png';
+import AiImage from '../assets/images/Ai-image.png';
 
 const Section = styled.div`
      height: auto;
@@ -25,9 +28,7 @@ const GlowingImage = styled.img`
   
   transition: border-color 0.3s ease-in-out;
   animation: glow 1s infinite alternate;
-  border-color: #00aaff; /* Change this to your desired glowing color */
-
-  
+  border-color: #00aaff; /* Change this to your desired glowing color */  
 
   @keyframes glow {
     0% {
@@ -39,6 +40,45 @@ const GlowingImage = styled.img`
       box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 30px rgba(0, 170, 255, 0.6), 0 0 40px rgba(0, 170, 255, 0.4);
     }
   }
+`;
+
+const NextGen = styled.img`
+  height: 50vh;
+  width: 60vw;
+  background-image: url(${NextGenImg});
+  border: 2px solid transparent;
+  border-radius: 10px;
+  z-index: 1;
+  
+  transition: border-color 0.3s ease-in-out;
+  animation: glow 1s infinite alternate;
+  border-color: #00aaff; /* Change this to your desired glowing color */  
+`;
+
+const ImgCrypto = styled.img`
+  height: 50vh;
+  width: 60vw;
+  background-image: url(${CryptoImg});
+  border: 2px solid transparent;
+  border-radius: 10px;
+  z-index: 1;
+  
+  transition: border-color 0.3s ease-in-out;
+  animation: glow 1s infinite alternate;
+  border-color: #00aaff; /* Change this to your desired glowing color */  
+`;
+
+const AiImg = styled.img`
+  height: 50vh;
+  width: 60vw;
+  background-image: url(${AiImage});
+  border: 2px solid transparent;
+  border-radius: 10px;
+  z-index: 1;
+  
+  transition: border-color 0.3s ease-in-out;
+  animation: glow 1s infinite alternate;
+  border-color: #00aaff; /* Change this to your desired glowing color */  
 `;
 
 const SectionContainer = styled.div`
@@ -88,17 +128,23 @@ const About = () => {
           And so I strive to become a 10x developer.<br />
           Besides coding I also do fitness and long distance running.
       </Description>
+
+      <NextGen />
       <Title>Next Generation</Title>
       <Description>
           Throughout my journey of Learning how to code I have learned how to use different technologies.<br /> 
           And now I have a good understanding of these powerful last generation technologies<br />
           Some of these you may know like NextJS, React, etc. These frameworks are an essential part of what a business needs to succeed in the modern sphere of IT.
       </Description>
+
+      <ImgCrypto />
       <Title>Crypto</Title>
       <Description>
           The decentralized crypto market has been booming and lots of people and businesses are using it and yet there are people that are missing out, as for me<br /> 
           I have been studying this market ever since it has been becoming mainstream and have been working on projects that have to do with this trend<br />
       </Description>
+
+      <AiImg />
       <Title>
         AI
       </Title>
