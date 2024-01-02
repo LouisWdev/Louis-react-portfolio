@@ -55,7 +55,7 @@ const TextContainer = styled.div`
 `;
 
 const VisitButton = styled.button`
-     margin-top: 5px;
+     margin-top: 1vh;
      font-size: large;
      cursor: pointer;
 
@@ -65,6 +65,7 @@ const VisitButton = styled.button`
      border-radius: 5px;
      height: 50px;
      width: 175px;
+     margin-left: 2vw;
 
      transition: background-color 0.5s;
 
@@ -90,6 +91,7 @@ const Portfolio = () => {
                 <Image src={krypt}></Image>
              <Link to="/Krypt">
                <VisitButton>View Project</VisitButton>
+               <VisitButton>Github Repo</VisitButton>
              </Link>
          </Container>
  
@@ -99,6 +101,7 @@ const Portfolio = () => {
              <TextParagraph>This admin panel was built with html and CSS. It is styled but isn't functional.</TextParagraph>
              <Image></Image>
              <VisitButton>View Project</VisitButton>
+             <VisitButton>Github Repo</VisitButton>
          </Container>
 
          {/*Project 3*/}
@@ -108,6 +111,7 @@ const Portfolio = () => {
                To me it is one of my most interesting projects. So it is built in TypeScript Java.</TextParagraph>
              <Image></Image>
              <VisitButton>View Project</VisitButton>
+             <VisitButton>Github Repo</VisitButton>
          </Container>
     </Section>
   )

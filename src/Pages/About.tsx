@@ -11,17 +11,20 @@ const Section = styled.div`
      height: auto;
 `;
 
+const ContainerFirst = styled.div`
+     margin-top: 5vh;
+     margin-left: 20vw;
+`;
+
 const Container = styled.div`
-     position: relative;
-     margin-top: 100px;
-     margin-right: 50px;
-     margin-left: 400px;
+     margin-right: 10vw;
 `;
 
 const GlowingImage = styled.img`
+  background-image: url(${AboutmeImg});
   height: 50vh;
   width: 60vw;
-  background-image: url(${AboutmeImg});
+  
   border: 2px solid transparent;
   border-radius: 10px;
   z-index: 1;
@@ -43,9 +46,10 @@ const GlowingImage = styled.img`
 `;
 
 const NextGen = styled.img`
+  background-image: url(${NextGenImg});
   height: 50vh;
   width: 60vw;
-  background-image: url(${NextGenImg});
+  
   border: 2px solid transparent;
   border-radius: 10px;
   z-index: 1;
@@ -56,9 +60,10 @@ const NextGen = styled.img`
 `;
 
 const ImgCrypto = styled.img`
+  background-image: url(${CryptoImg});
   height: 50vh;
   width: 60vw;
-  background-image: url(${CryptoImg});
+  
   border: 2px solid transparent;
   border-radius: 10px;
   z-index: 1;
@@ -69,9 +74,10 @@ const ImgCrypto = styled.img`
 `;
 
 const AiImg = styled.img`
+  background-image: url(${AiImage});
   height: 50vh;
   width: 60vw;
-  background-image: url(${AiImage});
+  
   border: 2px solid transparent;
   border-radius: 10px;
   z-index: 1;
@@ -117,9 +123,9 @@ const Description = styled.p`
 const About = () => {
   return (
     <Section id="About">
-      <Container>
+      <ContainerFirst>
         <GlowingImage />
-      </Container>
+      </ContainerFirst>
     <SectionContainer>
       
       <Title>About Me</Title>
@@ -128,9 +134,11 @@ const About = () => {
           And so I strive to become a 10x developer.<br />
           Besides coding I also do fitness and long distance running.
       </Description>
-
-      <NextGen />
-      <Title>Next Generation</Title>
+      <Container>
+         <NextGen />
+      </Container>
+        <Title>Next Generation</Title>
+      
       <Description>
           Throughout my journey of Learning how to code I have learned how to use different technologies.<br /> 
           And now I have a good understanding of these powerful last generation technologies<br />
