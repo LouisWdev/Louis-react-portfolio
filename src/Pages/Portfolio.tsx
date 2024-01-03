@@ -13,6 +13,21 @@ const Section = styled.div`
 const PortfolioTitle = styled.h1`
      margin-top: 100px;
      margin-left: 35%;
+     animation: textGlow 5s infinite alternate;
+
+     @keyframes textGlow {
+       0% {
+        color: #54d7ee;
+       }
+
+       50% {
+        color: #068686;
+       }
+
+       100% {
+        color: #5470ee;
+       }
+   }
 `;
 
 const BreakLine = styled.div`
@@ -40,6 +55,8 @@ const Image = styled.img`
 const ParagraphTitle = styled.div`
      font-size: 30px;
      display: flex;
+
+     animation: textGlow 5s infinite alternate;
 `;
 
 const TextParagraph = styled.div`
