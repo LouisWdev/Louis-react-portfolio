@@ -3,8 +3,6 @@ import styled from 'styled-components';
 
 //REACT ROUTER DOM
 import { Link } from 'react-router-dom';
-import {Link as Link2 } from 'react-scroll';
-
 
 //STYLING
 const NavbarContainer = styled.div`
@@ -44,16 +42,8 @@ const Navbar = () => {
   return (
     <NavbarContainer className='navbar' id='navbar'>
       <Link to="/" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
-         <Button>Home</Button>
+         <Button>Back to the home page</Button>
        </Link>
-      <Link2 to="About" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
-        <Button>About</Button>
-      </Link2>
-      <Link2 to="Contact" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
-         <Button>Contact</Button>
-      </Link2>
-      {/*Link to Portfolio Section*/}
-      <Link to="Portfolio" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}><Button>Portfolio</Button></Link>
    </NavbarContainer>
   )
 }

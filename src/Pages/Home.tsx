@@ -5,6 +5,9 @@ import styled, { keyframes } from 'styled-components';
 import About from "./About";
 import Contact from "./Contact"
 
+//NAVBAR
+import Navbar from '../components/Navbar';
+
 //ASSETS
 import BackgroundImg from '../assets/images/HomeBackgroundEdited.png'
 
@@ -129,6 +132,7 @@ const Home = () => {
   return (
     <>
       <Section id='Home'>
+        <Navbar />
         <BackgroundSection>
           <Container>
             <Text>

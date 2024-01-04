@@ -3,6 +3,9 @@ import styled from 'styled-components';
 //PORTFOLIO IMAGES
 import krypt from '../assets/images/ProjectImages/Blockchain.png';
 
+//NAVBAR PORTFOLIO
+import NavbarPortfolio from './NavbarPortfolio';
+
 //REACT ROUTER
 import { Link } from 'react-router-dom';
 
@@ -93,8 +96,9 @@ const VisitButton = styled.button`
 `;
 
 const Portfolio = () => {
-  return (
+  return ( 
     <Section id="Portfolio">    
+        <NavbarPortfolio />
          <PortfolioTitle>Welcome to my Portfolio section</PortfolioTitle> 
          <TitleSubText>Here you can view all my latest projects and other's that I have built</TitleSubText>
         <BreakLine />

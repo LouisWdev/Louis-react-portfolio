@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 //PAGES
 import Home from "./Pages/Home";
-import Portfolio from './Pages/Portfolio';
+import Portfolio from './PortfolioSection/Portfolio';
 
 //REACT ROUTER DOM
 import { Route, Routes } from "react-router-dom";
@@ -16,10 +16,9 @@ import './index.css'
 const App = () => {
   return (
       <>  
-       <Navbar />
           <Routes>
-            <Route path="/" element={<Home/>} />        
-            <Route path="/Portfolio" element={<Portfolio/>} />
+            <Route path="/" element={<Home/>} />   
+            <Route path="/Portfolio" element={<Portfolio/>} />     
           </Routes>  
         <Footer />
       </>   
