@@ -110,7 +110,7 @@ const Portfolio = () => {
                <TextParagraph>A web app built with tailwindCSS. It is a crypto wallet web app</TextParagraph>
              </TextContainer>
                 <Image src={krypt}></Image>
-             <Link to="/Krypt">
+             <Link to="https://github.com/LouisWackenier?tab=repositories">
                <VisitButton>View Project</VisitButton>
                <VisitButton>Github Repo</VisitButton>
              </Link>
@@ -121,8 +121,10 @@ const Portfolio = () => {
              <ParagraphTitle>Responsive Admin panel</ParagraphTitle>
              <TextParagraph>This admin panel was built with html and CSS. It is styled but isn't functional.</TextParagraph>
              <Image></Image>
+             <Link to="https://github.com/LouisWackenier?tab=repositories">
              <VisitButton>View Project</VisitButton>
              <VisitButton>Github Repo</VisitButton>
+             </Link>
          </Container>
 
          {/*Project 3*/}
@@ -131,8 +133,10 @@ const Portfolio = () => {
              <TextParagraph>One of my biggest projects in Java is this cool Typescript store. 
                To me it is one of my most interesting projects. So it is built in TypeScript Java.</TextParagraph>
              <Image></Image>
+             <Link to="https://github.com/LouisWackenier?tab=repositories">
              <VisitButton>View Project</VisitButton>
              <VisitButton>Github Repo</VisitButton>
+             </Link>
          </Container>
     </Section>
   )
