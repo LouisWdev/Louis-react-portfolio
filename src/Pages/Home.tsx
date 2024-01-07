@@ -1,10 +1,6 @@
 //REACT 
 import styled, { keyframes } from 'styled-components';
 
-//PAGES
-import About from "./About";
-import Contact from "./Contact"
-
 //NAVBAR
 import Navbar from '../components/Navbar';
 
@@ -14,10 +10,6 @@ import BackgroundImg from '../assets/images/HomeBackgroundEdited.png'
 //REACT ROUTER 
 import { Link } from 'react-router-dom';
 import {Link as Link2 } from 'react-scroll';
-
- const Section = styled.div`
-      height: 100vh;
- `;
 
  const BackgroundSection = styled.div`
       height: 100vh;
@@ -131,7 +123,6 @@ const Home = () => {
 
   return (
     <>
-      <Section id='Home'>
         <Navbar />
         <BackgroundSection>
           <Container>
@@ -150,12 +141,6 @@ const Home = () => {
             </Link2> 
           </Container>
          </BackgroundSection>
-      </Section>
-        {/*ABOUT ME SECTION*/}
-        <About />
-    
-        {/*CONTACT SECTION*/}
-        <Contact />
     </>
   );
 };
