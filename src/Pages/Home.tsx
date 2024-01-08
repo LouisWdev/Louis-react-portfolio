@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 import {Link as Link2 } from 'react-scroll';
 
  const BackgroundSection = styled.div`
-      height: 100vh;
+      height: 97.5vh;
       display: flex;
       background-image: url(${BackgroundImg});
       z-index: -1;

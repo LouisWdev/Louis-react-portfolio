@@ -11,13 +11,8 @@ const Section = styled.div`
      height: auto;
 `;
 
-const ContainerFirst = styled.div`
-     margin-top: 5vh;
-     margin-left: 20vw;
-`;
-
 const Container = styled.div`
-     margin-right: 10vw;
+     margin-top: 50px;
 `;
 
 const GlowingImage = styled.img`
@@ -88,7 +83,6 @@ const AiImg = styled.img`
 `;
 
 const SectionContainer = styled.div`
-  max-width: 800px;
   margin: 0 auto;
   padding: 40px 0;
   text-align: center;
@@ -123,11 +117,10 @@ const Description = styled.p`
 const About = () => {
   return (
     <Section id="About">
-      <ContainerFirst>
-        <GlowingImage />
-      </ContainerFirst>
     <SectionContainer>
-      
+      <Container>
+        <GlowingImage />
+      </Container>
       <Title>About Me</Title>
       <Description>
           I started coding from a young age and was already amazed by how coding works.<br /> 

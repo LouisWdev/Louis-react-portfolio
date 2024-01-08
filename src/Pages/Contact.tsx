@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 const Section = styled.div`
-     height: 100vh;
+     height: 90vh;
      display: flex;
 `;
 
 const FormContainer = styled.div`
   margin: 0 auto;
-  margin-top: 300px;
+  margin-top: 200px;
 `;
 
 const Form = styled.form`
