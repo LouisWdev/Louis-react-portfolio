@@ -48,11 +48,14 @@ const Navbar = () => {
       <Link to="About" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
         <Button>About</Button>
       </Link>
+      <Link to="Portfolio" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
+         <Button>Portfolio</Button>
+      </Link>
       <Link to="Contact" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
          <Button>Contact</Button>
       </Link>
       {/*Link to Portfolio Section*/}
-      <Link to="Portfolio" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}><Button>Portfolio</Button></Link>
+      
    </NavbarContainer>
   )
 }

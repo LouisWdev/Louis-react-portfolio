@@ -110,6 +110,9 @@ const Title = styled.h2`
 
 const Description = styled.p`
    font-size: 16px;
+   width: 20vw;
+   margin-left: 40vw;
+   text-align: center;
    line-height: 1.6;
 `;
 
