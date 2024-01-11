@@ -44,6 +44,7 @@ const TitleSubText = styled.h2`
 const Container = styled.div`
           margin-top: 5%;
           margin-left: 30%;
+          padding-bottom: 5vh;
           justify-content: flex-start;
 `;
 
