@@ -51,6 +51,8 @@ const Container = styled.div`
 const Image = styled.img`
      width: 500px;
      display: flex;   
+     border-radius: 10px;
+     border: solid darkgray 2px;
 `;
 
 const ParagraphTitle = styled.div`
@@ -112,12 +114,11 @@ const Portfolio = () => {
                <VisitButton>Github Repo</VisitButton>
              </Link>
          </Container>
- 
          {/*Project 2*/}
          <Container>
              <ParagraphTitle>Responsive Admin panel</ParagraphTitle>
              <TextParagraph>This admin panel was built with html and CSS. It is styled but isn't functional.</TextParagraph>
-             <Image></Image>
+             
              <Link to="https://github.com/LouisWackenier?tab=repositories">
              <VisitButton>View Project</VisitButton>
              <VisitButton>Github Repo</VisitButton>
@@ -129,7 +130,7 @@ const Portfolio = () => {
              <ParagraphTitle>Typescript e-commerce store</ParagraphTitle>
              <TextParagraph>One of my biggest projects in Java is this cool Typescript store. 
                To me it is one of my most interesting projects. So it is built in TypeScript Java.</TextParagraph>
-             <Image></Image>
+             
              <Link to="https://github.com/LouisWackenier?tab=repositories">
              <VisitButton>View Project</VisitButton>
              <VisitButton>Github Repo</VisitButton>
