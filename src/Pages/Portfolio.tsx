@@ -117,7 +117,7 @@ const Portfolio = () => {
          {/*Project 2*/}
          <Container>
              <ParagraphTitle>Responsive Admin panel</ParagraphTitle>
-             <TextParagraph>This admin panel was built with html and CSS. It is styled but isn't functional.</TextParagraph>
+             <TextParagraph>This admin panel was built with html and CSS.</TextParagraph>
              
              <Link to="https://github.com/LouisWackenier?tab=repositories">
              <VisitButton>View Project</VisitButton>
@@ -129,7 +129,7 @@ const Portfolio = () => {
          <Container>
              <ParagraphTitle>Typescript e-commerce store</ParagraphTitle>
              <TextParagraph>One of my biggest projects in Java is this cool Typescript store. 
-               To me it is one of my most interesting projects. So it is built in TypeScript Java.</TextParagraph>
+               To me it is one of my most interesting projects. It is built in TypeScript Java.</TextParagraph>
              
              <Link to="https://github.com/LouisWackenier?tab=repositories">
              <VisitButton>View Project</VisitButton>
