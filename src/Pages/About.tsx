@@ -16,7 +16,6 @@ const Container = styled.div`
 `;
 
 const GlowingImage = styled.img`
-  background-image: url(${AboutmeImg});
   height: 50vh;
   width: 60vw;
   
@@ -38,48 +37,6 @@ const GlowingImage = styled.img`
       box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 30px rgba(0, 170, 255, 0.6), 0 0 40px rgba(0, 170, 255, 0.4);
     }
   }
-`;
-
-const NextGen = styled.img`
-  background-image: url(${NextGenImg});
-  height: 50vh;
-  width: 60vw;
-  
-  border: 2px solid transparent;
-  border-radius: 10px;
-  z-index: 1;
-  
-  transition: border-color 0.3s ease-in-out;
-  animation: glow 1s infinite alternate;
-  border-color: #00aaff; /* Change this to your desired glowing color */  
-`;
-
-const ImgCrypto = styled.img`
-  background-image: url(${CryptoImg});
-  height: 50vh;
-  width: 60vw;
-  
-  border: 2px solid transparent;
-  border-radius: 10px;
-  z-index: 1;
-  
-  transition: border-color 0.3s ease-in-out;
-  animation: glow 1s infinite alternate;
-  border-color: #00aaff; /* Change this to your desired glowing color */  
-`;
-
-const AiImg = styled.img`
-  background-image: url(${AiImage});
-  height: 50vh;
-  width: 60vw;
-  
-  border: 2px solid transparent;
-  border-radius: 10px;
-  z-index: 1;
-  
-  transition: border-color 0.3s ease-in-out;
-  animation: glow 1s infinite alternate;
-  border-color: #00aaff; /* Change this to your desired glowing color */  
 `;
 
 const SectionContainer = styled.div`
@@ -122,7 +79,7 @@ const About = () => {
     <Section id="About">
     <SectionContainer>
       <Container>
-        <GlowingImage />
+        <GlowingImage src={AboutmeImg}/>
       </Container>
       <Title>About Me</Title>
       <Description>
@@ -131,7 +88,7 @@ const About = () => {
           Besides coding I also do fitness and long distance running.
       </Description>
       <Container>
-         <NextGen />
+         <GlowingImage src={NextGenImg} />
       </Container>
         <Title>Next Generation</Title>
       
@@ -141,14 +98,14 @@ const About = () => {
           Some of these you may know like NextJS, React, etc. These frameworks are an essential part of what a business needs to succeed in the modern sphere of IT.
       </Description>
 
-      <ImgCrypto />
+      <GlowingImage src={CryptoImg} />
       <Title>Crypto</Title>
       <Description>
           The decentralized crypto market has been booming and lots of people and businesses are using it and yet there are people that are missing out, as for me<br /> 
           I have been studying this market ever since it has been becoming mainstream and have been working on projects that have to do with this trend<br />
       </Description>
 
-      <AiImg />
+      <GlowingImage src={AiImage}/>
       <Title>
         AI
       </Title>
