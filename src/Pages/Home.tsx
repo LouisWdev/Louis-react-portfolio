@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 import {Link as Link2 } from 'react-scroll';
 
  const BackgroundSection = styled.div`
-      height: 97.5vh;
+      height: 98.3vh;
       display: flex;
       background-image: url(${BackgroundImg});
       z-index: -1;
@@ -75,6 +75,7 @@ const SubText = styled.div`
 `;
 
 const BtnPortfolio = styled.button`
+     font-weight: bolder;
      margin: 10px;
      margin-left: 20%;
      font-size: 25px;
@@ -98,6 +99,7 @@ const BtnPortfolio = styled.button`
 `;
 
 const BtnContact = styled.button`
+     font-weight: bolder;
      margin: 10px;
      font-size: 25px;
      cursor: pointer;
@@ -136,9 +138,9 @@ const Home = () => {
              <Link to="/Portfolio" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
                 <BtnPortfolio>Portfolio</BtnPortfolio>
               </Link>
-             <Link2 to="Contact" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
+             <Link to="Contact" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
                 <BtnContact>Contact</BtnContact>
-            </Link2> 
+            </Link> 
           </Container>
          </BackgroundSection>
     </>
