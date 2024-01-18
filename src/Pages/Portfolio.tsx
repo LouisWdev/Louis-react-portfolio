@@ -7,7 +7,7 @@ import krypt from '../assets/images/ProjectImages/Blockchain.png';
 import { Link } from 'react-router-dom';
 
 const Section = styled.div`
-     height: auto;
+     height: 100vh;
 `;
 
 const PortfolioTitle = styled.h1`
@@ -44,7 +44,6 @@ const TitleSubText = styled.h2`
 const Container = styled.div`
           margin-top: 5%;
           margin-left: 30%;
-          padding-bottom: 5vh;
           justify-content: flex-start;
 `;
 
