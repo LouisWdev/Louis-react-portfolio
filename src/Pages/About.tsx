@@ -2,10 +2,10 @@
 import styled from 'styled-components';
 
 //IMG
-import AboutmeImg from '../assets/images/VaporwaveRoom.png';
-import NextGenImg from '../assets/images/Next-gen-image.png';
-import CryptoImg from '../assets/images/crypto-image.png';
-import AiImage from '../assets/images/Ai-image.png';
+import AboutmeImg from '../assets/images/AboutImage/VaporwaveRoom.png';
+import NextGenImg from '../assets/images/AboutImage/Next-gen-image.png';
+import CryptoImg from '../assets/images/AboutImage/crypto-image.png';
+import AiImage from '../assets/images/AboutImage/Ai-image.png';
 
 const Section = styled.div`
      height: auto;
