@@ -9,7 +9,6 @@ import BackgroundImg from '../assets/images/HomeBackgroundEdited.png'
 
 //REACT ROUTER 
 import { Link } from 'react-router-dom';
-import {Link as Link2 } from 'react-scroll';
 
  const BackgroundSection = styled.div`
       height: 98.3vh;
@@ -21,6 +20,14 @@ import {Link as Link2 } from 'react-scroll';
       display: flex;
       background-position: center;
       opacity: 100%;
+ `;
+
+ const BackgroundAnimation = styled.div`
+     max-width: 100%;
+     height: auto;
+     display: block;
+     border-radius: 10px; /* Optional: add border-radius for a rounded image */
+     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2); /* Adjust the values for the glow effect */
  `;
 
 const typingAnimation = keyframes`
@@ -126,6 +133,7 @@ const Home = () => {
   return (
     <>
         <Navbar />
+        <BackgroundAnimation>
         <BackgroundSection>
           <Container>
             <Text>
@@ -143,6 +151,7 @@ const Home = () => {
             </Link> 
           </Container>
          </BackgroundSection>
+         </BackgroundAnimation>
     </>
   );
 };
