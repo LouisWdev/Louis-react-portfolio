@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import TwitterIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom';
@@ -18,17 +18,17 @@ const FooterContainer = styled.div`
 `;
 
 const TwitterIconContainer = styled.div`
-    padding-left: 5px;
+    padding-left: 15px;
     cursor: pointer;
 `;
 
 const LinkedInIconContainer = styled.div`
-   padding-left: 5px;
+   padding-left: 10px;
    cursor: pointer;
 `;
 
 const GitHubIconContainer = styled.div`
-   padding-left: 5px;
+   padding-left: 10px;
    cursor: pointer;
 `;
 
