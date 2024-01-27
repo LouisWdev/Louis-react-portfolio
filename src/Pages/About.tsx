@@ -49,21 +49,7 @@ const SectionContainer = styled.div`
 const Title = styled.h2`
    font-size: 28px;
    margin-bottom: 20px;
-   animation: textGlow 5s infinite alternate;
-
-   @keyframes textGlow {
-       0% {
-        color: #54d7ee;
-       }
-
-       50% {
-        color: #068686;
-       }
-
-       100% {
-        color: #5470ee;
-       }
-   }
+   
 `;
 
 const Description = styled.p`
@@ -72,6 +58,24 @@ const Description = styled.p`
    margin-left: 40vw;
    text-align: center;
    line-height: 1.6;
+`;
+
+const Breakline = styled.div`
+
+   
+
+  animation: glow 1s infinite alternate;
+
+  @keyframes glow {
+    0% {
+      border-color: transparent;
+      box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+    }
+    100% {
+      border-color: #00aaff; /* Change this to your desired glowing color */
+      box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 30px rgba(0, 170, 255, 0.6), 0 0 40px rgba(0, 170, 255, 0.4);
+    }
+  }
 `;
 
 
@@ -114,6 +118,7 @@ const About = () => {
           From a young age I have had a passion and interest in sci fi and I fell in love with the genre, And I have been waiting for the chance to learn about AI and now that it has been<br />
           becoming popular I have been having a keen interest in AI technology and I see it as an essential part in humanity's strive towards the future so I am expecting to be working on some AI projects. 
       </Description>
+      <Breakline />
     </SectionContainer>
     </Section>
   )
