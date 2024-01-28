@@ -53,9 +53,10 @@ const Title = styled.h2`
 `;
 
 const Description = styled.p`
-   font-size: 16px;
-   width: 20vw;
-   margin-left: 40vw;
+   font-size: 20px;
+   width: 55vw;
+   margin-left: 22vw;
+   margin-bottom: 15px;
    text-align: center;
    line-height: 1.6;
 `;
