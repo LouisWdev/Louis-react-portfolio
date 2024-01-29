@@ -44,7 +44,7 @@ const Socials = styled.div`
 const Footer = () => {
   return (
       <FooterContainer>
-              <Text>© 2023 Louis W. All rights reserved.</Text>
+              <Text>© 2024 Louis W. All rights reserved.</Text>
               <Socials>My Socials 
                 <TwitterIconContainer>
                    <Link to="https://twitter.com/LouisWDev">

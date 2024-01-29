@@ -74,6 +74,7 @@ const TextContainer = styled.div`
 `;
 
 const VisitButton = styled.button`
+     font-weight: 700;
      margin-top: 1vh;
      font-size: large;
      cursor: pointer;
