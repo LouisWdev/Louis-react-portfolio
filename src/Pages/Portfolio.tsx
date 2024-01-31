@@ -101,13 +101,21 @@ const VisitButton = styled.button`
      border-radius: 5px;
      height: 50px;
      width: 175px;
-
-     transition: background-color 0.5s;
+     transition: background-color 1s;
 
      &:hover {
-       background-color: #ffffff;
-       color: black;
-  }
+       background-color: #b63030;
+       color: darkgray;
+       border: solid black 2px;
+   }
+`;
+
+const ButtonContainer = styled.div`
+     background-color: transparent;
+     display: flex;
+     margin-left: 3vw;
+     margin-right: 3vw;
+     justify-content: space-between;
 `;
 
 const Portfolio = () => {
@@ -126,18 +134,23 @@ const Portfolio = () => {
              </TextContainer>
                 
              <Link to="https://github.com/LouisWackenier?tab=repositories">
-               <VisitButton>View Project</VisitButton>
-               <VisitButton>Github Repo</VisitButton>
+              <ButtonContainer>
+                <VisitButton>View Project</VisitButton> 
+                <VisitButton>Github Repo</VisitButton>
+              </ButtonContainer>
              </Link>
          </Container>
+
          {/*Project 2*/}
          <Container>
              <ParagraphTitle>Responsive Admin panel</ParagraphTitle>
              <TextParagraph>This admin panel was built with html and CSS.</TextParagraph>
              
              <Link to="https://github.com/LouisWackenier?tab=repositories">
-             <VisitButton>View Project</VisitButton>
-             <VisitButton>Github Repo</VisitButton>
+             <ButtonContainer>
+              <VisitButton>View Project</VisitButton>
+               <VisitButton>Github Repo</VisitButton>
+             </ButtonContainer>
              </Link>
          </Container>
 
@@ -148,8 +161,10 @@ const Portfolio = () => {
                To me it is one of my most interesting projects. It is built in TypeScript Java.</TextParagraph>
              
              <Link to="https://github.com/LouisWackenier?tab=repositories">
-             <VisitButton>View Project</VisitButton>
-             <VisitButton>Github Repo</VisitButton>
+             <ButtonContainer>
+              <VisitButton>View Project</VisitButton>
+              <VisitButton>Github Repo</VisitButton>
+             </ButtonContainer>
              </Link>
          </Container>
     </Section>
