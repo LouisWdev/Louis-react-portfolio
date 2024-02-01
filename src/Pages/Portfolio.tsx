@@ -52,8 +52,8 @@ const Container = styled.div`
           height: 43vh;
           justify-content: flex-start;
           z-index: -1;
-          background-color: #4d4747;
-          transition: background-color 2s;
+          background-color: #41bbd1;
+          transition: background-color 1s;
 
           &:hover {
            background-color: #ffffff;
@@ -71,13 +71,13 @@ const ParagraphTitle = styled.div`
      font-size: 30px;
      display: flex;
 
-     background-color: darkgray;
+     background-color: #000000;
 
      animation: textGlow 5s infinite alternate;
 `;
 
 const TextParagraph = styled.div`
-     background-color: darkgray;
+     background-color: #000000;
      display: flex;
      font-size: 16px;
 `;
@@ -104,8 +104,8 @@ const VisitButton = styled.button`
      transition: background-color 1s;
 
      &:hover {
-       background-color: #b63030;
-       color: darkgray;
+       background-color: #757575;
+       color: #000000;
        border: solid black 2px;
    }
 `;
