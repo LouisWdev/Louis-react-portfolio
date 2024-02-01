@@ -49,6 +49,7 @@ const Container = styled.div`
           padding-top: 1vh;
           padding-left: 1vh;
           padding-right: 1vh;
+          border: 2px solid white;
           height: 43vh;
           justify-content: flex-start;
           z-index: -1;
