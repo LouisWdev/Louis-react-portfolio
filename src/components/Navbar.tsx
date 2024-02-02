@@ -27,7 +27,7 @@ const Button = styled.h2`
   border: none;
   cursor: pointer;
 
-  transition: color 0.3s;
+  transition: color 0.3s, text-decoration 0.5s;
 
   &:hover {
     text-decoration: underline;

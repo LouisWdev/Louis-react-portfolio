@@ -42,29 +42,28 @@ const TitleSubText = styled.h2`
 `;
 
 const Container = styled.div`
-          border-radius: 2vh;
-          margin-top: 5%;
-          margin-left: 30%;
-          width: 27vw;
-          padding-top: 1vh;
-          padding-left: 1vh;
-          padding-right: 1vh;
-          border: 2px solid white;
-          height: 43vh;
-          justify-content: flex-start;
-          z-index: -1;
+    border-radius: 2vh;
+    margin-top: 5%;
+    margin-left: 30%;
+    width: 27vw;
+    padding-top: 1vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    border: 2px solid white;
+    height: 43vh;
+    justify-content: flex-start;
+    z-index: -1;
+    background: rgb(2,0,36);
+    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(20,131,164,0.8533788515406162) 100%);
+    transition: background-color 1s, box-shadow 1s; /* Added box-shadow transition */
 
-          background: rgb(2,0,36);
-          background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(20,131,164,0.8533788515406162) 100%);
-
-          transition: background-color 1s;
-
-          &:hover {
-           background-color: #ffffff;
-           color: black;
-           box-shadow: darkblue;
-  }
+    &:hover {
+        background-color: #ffffff;
+        color: black;
+        box-shadow: 0 0 10px rgba(243, 243, 243, 1); /* Slight shadow on hover */
+    }
 `;
+
 
 const Image = styled.img`
      width: 500px;
@@ -113,6 +112,7 @@ const VisitButton = styled.button`
      &:hover {
        background-color: #757575;
        color: #000000;
+       text-decoration: #000000;
        border: solid black 2px;
    }
 `;
