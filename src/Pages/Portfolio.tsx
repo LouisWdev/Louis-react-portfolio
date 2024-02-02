@@ -53,7 +53,10 @@ const Container = styled.div`
           height: 43vh;
           justify-content: flex-start;
           z-index: -1;
-          background-color: #41bbd1;
+
+          background: rgb(2,0,36);
+          background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(20,131,164,0.8533788515406162) 100%);
+
           transition: background-color 1s;
 
           &:hover {
@@ -71,22 +74,25 @@ const Image = styled.img`
 const ParagraphTitle = styled.div`
      font-size: 30px;
      display: flex;
-
-     background-color: #000000;
+     font-weight: 500;
+     text-shadow: 2px 2px 2px black;
+     background-color: transparent;
 
      animation: textGlow 5s infinite alternate;
 `;
 
 const TextParagraph = styled.div`
-     background-color: #000000;
+     background-color: transparent;
      display: flex;
      font-size: 16px;
+     text-shadow: 2px 2px 2px black;
 `;
 
 const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    background-color: transparent;
 `;
 
 const VisitButton = styled.button`
