@@ -39,6 +39,7 @@ const BreakLine = styled.div`
 
 const TitleSubText = styled.h2`
     text-align: center;
+    border-bottom: 3px solid white;
 `;
 
 const Container = styled.div`
