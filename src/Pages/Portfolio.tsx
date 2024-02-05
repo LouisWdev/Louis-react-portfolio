@@ -30,22 +30,17 @@ const PortfolioTitle = styled.h1`
    }
 `;
 
-const BreakLine = styled.div`
-      margin-left: 25%;
-      width: 50%;
-      height: 2px; /* Set the height of the separate line */
-      background-color: rgba(255, 255, 255, 0.5); /* Color of the separate line */
-`;
-
 const TitleSubText = styled.h2`
     text-align: center;
     border-bottom: 3px solid white;
+    width: 50vw;
+    margin-left: 23vw;
 `;
 
 const Container = styled.div`
     border-radius: 2vh;
     margin-top: 5%;
-    margin-left: 30%;
+    margin-left: 34%;
     width: 27vw;
     padding-top: 1vh;
     padding-left: 1vh;
@@ -131,7 +126,6 @@ const Portfolio = () => {
     <Section id="Portfolio">    
          <PortfolioTitle>Welcome to my Portfolio</PortfolioTitle> 
          <TitleSubText>Here you can view all my latest projects that I have built</TitleSubText>
-        <BreakLine />
 
         {/*Project 1*/}
          <Container>
