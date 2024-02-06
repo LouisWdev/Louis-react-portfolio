@@ -10,6 +10,12 @@ import BackgroundImg from '../assets/images/HomeBackgroundEdited.png'
 //REACT ROUTER 
 import { Link } from 'react-router-dom';
 
+
+const Section = styled.div`
+height: 100vh;
+
+`;
+
  const BackgroundSection = styled.div`
       height: 98.3vh;
       display: flex;
@@ -152,6 +158,9 @@ const Home = () => {
           </Container>
          </BackgroundSection>
          </BackgroundAnimation>
+         <Section>
+
+         </Section>
     </>
   );
 };
