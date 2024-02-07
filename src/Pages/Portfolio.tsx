@@ -35,11 +35,12 @@ const TitleSubText = styled.h2`
     border-bottom: 3px solid white;
     width: 50vw;
     margin-left: 23vw;
+    padding-bottom: 50px;
 `;
 
 const Container = styled.div`
     border-radius: 2vh;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 34%;
     width: 27vw;
     padding-top: 1vh;
