@@ -105,7 +105,7 @@ const About = () => {
       <GlowingImage src={CryptoImg} />
       <Title>Crypto</Title>
       <Description>
-          The decentralized crypto market has been booming and lots of people and businesses are using it and yet there are people that are missing out, as for me<br /> 
+          The decentralized crypto market has been on the rise and lots of people and businesses are using it and yet there are people that are missing out, as for me<br />
           I have been studying this market ever since it has been becoming mainstream and have been working on projects that have to do with this trend<br />
       </Description>
 
