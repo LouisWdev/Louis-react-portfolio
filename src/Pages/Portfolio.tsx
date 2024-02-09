@@ -126,7 +126,7 @@ const Portfolio = () => {
   return ( 
     <Section id="Portfolio">    
          <PortfolioTitle>Welcome to my Portfolio</PortfolioTitle> 
-         <TitleSubText>Here you can view all my latest projects that I have built</TitleSubText>
+         <TitleSubText>Here you can view all my latest projects.</TitleSubText>
 
         {/*Project 1*/}
          <Container>
