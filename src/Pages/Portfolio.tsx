@@ -109,7 +109,6 @@ const VisitButton = styled.button`
      &:hover {
        background-color: #757575;
        color: #000000;
-       text-decoration: #000000;
        border: solid black 2px;
    }
 `;
@@ -135,8 +134,7 @@ const Portfolio = () => {
                <ParagraphTitle>Blockchain App</ParagraphTitle>
                <TextParagraph>A web app built with tailwindCSS. It is a crypto wallet web app</TextParagraph>
              </TextContainer>
-                
-             <Link to="https://github.com/LouisWackenier?tab=repositories">
+             <Link to="https://github.com/LouisWackenier?tab=repositories" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
               <ButtonContainer>
                 <VisitButton>View Project</VisitButton> 
                 <VisitButton>Github Repo</VisitButton>
@@ -149,9 +147,9 @@ const Portfolio = () => {
              <ParagraphTitle>Responsive Admin panel</ParagraphTitle>
              <TextParagraph>This admin panel was built with html and CSS.</TextParagraph>
              
-             <Link to="https://github.com/LouisWackenier?tab=repositories">
+             <Link to="https://github.com/LouisWackenier?tab=repositories" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
              <ButtonContainer>
-              <VisitButton>View Project</VisitButton>
+               <VisitButton>View Project</VisitButton>
                <VisitButton>Github Repo</VisitButton>
              </ButtonContainer>
              </Link>
@@ -163,7 +161,7 @@ const Portfolio = () => {
              <TextParagraph>One of my biggest projects in Java is this cool Typescript store. 
                To me it is one of my most interesting projects. It is built in TypeScript Java.</TextParagraph>
              
-             <Link to="https://github.com/LouisWackenier?tab=repositories">
+             <Link to="https://github.com/LouisWackenier?tab=repositories" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
              <ButtonContainer>
               <VisitButton>View Project</VisitButton>
               <VisitButton>Github Repo</VisitButton>
