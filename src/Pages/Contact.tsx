@@ -78,7 +78,7 @@ const Button = styled.button`
   transition: background-color 1s;
 
   &:hover {
-    background-color: darkblue;
+    background-color: lightblue;
   }
   
 `;
