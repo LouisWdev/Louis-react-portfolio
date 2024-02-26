@@ -108,7 +108,7 @@ const VisitButton = styled.button`
 
      &:hover {
        background-color: #757575;
-       color: #000000;
+       color: lightblue;
        border: solid black 2px;
    }
 `;

@@ -1,7 +1,7 @@
 //REACT 
 import styled, { keyframes } from 'styled-components';
 
-//NAVBAR
+//COMPONENT
 import Navbar from '../components/Navbar';
 
 //ASSETS
