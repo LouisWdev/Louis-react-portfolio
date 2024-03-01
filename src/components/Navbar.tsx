@@ -15,6 +15,9 @@ const NavbarContainer = styled.div`
   position: fixed;
   z-index: 2;
   top: 0;
+
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 `;
 
 const Button = styled.h2`
