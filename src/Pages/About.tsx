@@ -63,7 +63,8 @@ const SectionContainer = styled.div`
 
 const Title = styled.h2`
    font-size: 28px;
-   margin-bottom: 20px;
+   margin-top: 20px;
+   margin-bottom: 10px;
    
 `;
 

@@ -11,7 +11,7 @@ import BackgroundImg from '../assets/images/HomeBackgroundEdited.png'
 import { Link } from 'react-router-dom';
 
  const BackgroundSection = styled.div`
-      height: 99.5vh;
+      height: 100vh;
       display: flex;
       background-image: url(${BackgroundImg});
       z-index: -1;
