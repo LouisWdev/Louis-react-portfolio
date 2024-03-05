@@ -7,77 +7,6 @@ import NextGenImg from '../assets/images/AboutImage/Next-gen-image.png';
 import CryptoImg from '../assets/images/AboutImage/crypto-image.png';
 import AiImage from '../assets/images/AboutImage/Ai-image.png';
 
-const Section = styled.div`
-     height: auto;
-`;
-
-
-const Container = styled.div`
-     margin-top: 20px;
-`;
-
-const GlowingImage = styled.img`
-  height: 50vh;
-  width: 60vw;
-  margin-top: 50px;
-  
-  border: 2px solid transparent;
-  border-radius: 10px;
-  z-index: 1;
-  
-  transition: border-color 0.3s ease-in-out;
-  animation: glow 1s infinite alternate;
-  border-color: #00aaff; /* Change this to your desired glowing color */  
-
-  @keyframes glow {
-    0% {
-      border-color: transparent;
-      box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
-    }
-    100% {
-      border-color: #00aaff; /* Change this to your desired glowing color */
-      box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 30px rgba(0, 170, 255, 0.6), 0 0 40px rgba(0, 170, 255, 0.4);
-    }
-  }
-`;
-
-const AIImage = styled.img`
-  height: 60vh;
-  width: 60vw;
-  margin-top: 40px;
-  
-  border: 2px solid transparent;
-  border-radius: 10px;
-  z-index: 1;
-  
-  transition: border-color 0.3s ease-in-out;
-  animation: glow 1s infinite alternate;
-  border-color: #00aaff; /* Change this to your desired glowing color */  
-`;
-
-const SectionContainer = styled.div`
-  margin: 0 auto;
-  padding: 40px 0;
-  text-align: center;
-`;
-
-const Title = styled.h2`
-   font-size: 28px;
-   margin-top: 20px;
-   margin-bottom: 10px;
-   
-`;
-
-const Description = styled.p`
-   font-size: 20px;
-   width: 55vw;
-   margin-left: 22vw;
-   margin-bottom: 20px;
-   text-align: center;
-   line-height: 1.6;
-   padding-bottom: 20px;
-   border-bottom: solid white 3px;
-`;
 
 const About = () => {
   return (
@@ -124,3 +53,76 @@ const About = () => {
 }
 
 export default About
+
+//STYLING
+const Section = styled.div`
+       height: auto;
+  `;
+  
+  
+  const Container = styled.div`
+       margin-top: 20px;
+  `;
+  
+  const GlowingImage = styled.img`
+    height: 50vh;
+    width: 60vw;
+    margin-top: 50px;
+    
+    border: 2px solid transparent;
+    border-radius: 10px;
+    z-index: 1;
+    
+    transition: border-color 0.3s ease-in-out;
+    animation: glow 1s infinite alternate;
+    border-color: #00aaff; /* Change this to your desired glowing color */  
+  
+    @keyframes glow {
+      0% {
+        border-color: transparent;
+        box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+      }
+      100% {
+        border-color: #00aaff; /* Change this to your desired glowing color */
+        box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 30px rgba(0, 170, 255, 0.6), 0 0 40px rgba(0, 170, 255, 0.4);
+      }
+    }
+  `;
+  
+  const AIImage = styled.img`
+    height: 60vh;
+    width: 60vw;
+    margin-top: 40px;
+    
+    border: 2px solid transparent;
+    border-radius: 10px;
+    z-index: 1;
+    
+    transition: border-color 0.3s ease-in-out;
+    animation: glow 1s infinite alternate;
+    border-color: #00aaff; /* Change this to your desired glowing color */  
+  `;
+  
+  const SectionContainer = styled.div`
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+  `;
+  
+  const Title = styled.h2`
+     font-size: 28px;
+     margin-top: 20px;
+     margin-bottom: 10px;
+     
+  `;
+  
+  const Description = styled.p`
+     font-size: 20px;
+     width: 55vw;
+     margin-left: 22vw;
+     margin-bottom: 20px;
+     text-align: center;
+     line-height: 1.6;
+     padding-bottom: 20px;
+     border-bottom: solid white 3px;
+  `;
