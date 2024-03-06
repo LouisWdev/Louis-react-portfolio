@@ -5,13 +5,14 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom';
 
 const FooterContainer = styled.div`
+     background-color: rgba(7, 0, 27, 0.8);
+     width: 100%;
      display: inline-block;
      position: fixed;
 
      background-color: transparent;
 
      bottom: 0%;
-     width: 90vw;
 
      margin-bottom: 20px;
      margin-left: 40px;
