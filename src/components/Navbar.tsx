@@ -4,6 +4,29 @@ import styled from 'styled-components';
 //REACT ROUTER DOM
 import { Link } from 'react-router-dom';
 
+const Navbar = () => {
+
+  return (
+    <div className='bg-purple w-screen'>
+      <Link to="/" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
+         <Button>Home</Button>
+       </Link>
+      <Link to="About" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
+        <Button>About</Button>
+      </Link>
+      <Link to="Portfolio" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
+         <Button>Portfolio</Button>
+      </Link>
+      <Link to="Contact" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
+         <Button>Contact</Button>
+      </Link>
+      {/*Link to Portfolio Section*/}
+      
+   </div>
+  )
+}
+
+export default Navbar
 
 //STYLING
 const NavbarContainer = styled.div`
@@ -37,30 +60,3 @@ const Button = styled.h2`
     color: gray;
   }
 `;
-
-
-const Navbar = () => {
-  
-
-
-  return (
-    <NavbarContainer className='navbar' id='navbar'>
-      <Link to="/" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
-         <Button>Home</Button>
-       </Link>
-      <Link to="About" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
-        <Button>About</Button>
-      </Link>
-      <Link to="Portfolio" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
-         <Button>Portfolio</Button>
-      </Link>
-      <Link to="Contact" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
-         <Button>Contact</Button>
-      </Link>
-      {/*Link to Portfolio Section*/}
-      
-   </NavbarContainer>
-  )
-}
-
-export default Navbar

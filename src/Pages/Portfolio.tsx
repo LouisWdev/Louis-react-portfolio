@@ -6,6 +6,59 @@ import krypt from '../assets/images/ProjectImages/Blockchain.png';
 //REACT ROUTER
 import { Link } from 'react-router-dom';
 
+const Portfolio = () => {
+  return ( 
+    <Section id="Portfolio">    
+         <PortfolioTitle>Welcome to my Portfolio</PortfolioTitle> 
+         <TitleSubText>Here you can view all my latest projects.</TitleSubText>
+
+        {/*Project 1*/}
+         <Container>
+            <Image src={krypt}></Image>
+            <TextContainer>
+               <ParagraphTitle>Blockchain App</ParagraphTitle>
+               <TextParagraph>A web app built with tailwindCSS. It is a crypto wallet web app</TextParagraph>
+             </TextContainer>
+             <Link to="https://github.com/LouisWackenier?tab=repositories" style={{ textDecoration: 'none'}}>
+              <ButtonContainer>
+                <VisitButton>View Project</VisitButton> 
+                <VisitButton>Github Repo</VisitButton>
+              </ButtonContainer>
+             </Link>
+         </Container>
+
+         {/*Project 2*/}
+         <Container>
+             <ParagraphTitle>Responsive Admin panel</ParagraphTitle>
+             <TextParagraph>This admin panel was built with html and CSS.</TextParagraph>
+             
+             <Link to="https://github.com/LouisWackenier?tab=repositories" style={{ textDecoration: 'none'}}>
+             <ButtonContainer>
+               <VisitButton>View Project</VisitButton>
+               <VisitButton>Github Repo</VisitButton>
+             </ButtonContainer>
+             </Link>
+         </Container>
+
+         {/*Project 3*/}
+         <Container>
+             <ParagraphTitle>Typescript e-commerce store</ParagraphTitle>
+             <TextParagraph>One of my biggest projects in Java is this cool Typescript store. 
+               To me it is one of my most interesting projects. It is built in TypeScript Java.</TextParagraph>
+             
+             <Link to="https://github.com/LouisWackenier?tab=repositories" style={{ textDecoration: 'none'}}>
+             <ButtonContainer>
+              <VisitButton>View Project</VisitButton>
+              <VisitButton>Github Repo</VisitButton>
+             </ButtonContainer>
+             </Link>
+         </Container>
+    </Section>
+  )
+}
+
+export default Portfolio
+
 const Section = styled.div`
      height: 100vh;
 `;
@@ -120,56 +173,3 @@ const ButtonContainer = styled.div`
      margin-right: 3vw;
      justify-content: space-between;
 `;
-
-const Portfolio = () => {
-  return ( 
-    <Section id="Portfolio">    
-         <PortfolioTitle>Welcome to my Portfolio</PortfolioTitle> 
-         <TitleSubText>Here you can view all my latest projects.</TitleSubText>
-
-        {/*Project 1*/}
-         <Container>
-            <Image src={krypt}></Image>
-            <TextContainer>
-               <ParagraphTitle>Blockchain App</ParagraphTitle>
-               <TextParagraph>A web app built with tailwindCSS. It is a crypto wallet web app</TextParagraph>
-             </TextContainer>
-             <Link to="https://github.com/LouisWackenier?tab=repositories" style={{ textDecoration: 'none'}}>
-              <ButtonContainer>
-                <VisitButton>View Project</VisitButton> 
-                <VisitButton>Github Repo</VisitButton>
-              </ButtonContainer>
-             </Link>
-         </Container>
-
-         {/*Project 2*/}
-         <Container>
-             <ParagraphTitle>Responsive Admin panel</ParagraphTitle>
-             <TextParagraph>This admin panel was built with html and CSS.</TextParagraph>
-             
-             <Link to="https://github.com/LouisWackenier?tab=repositories" style={{ textDecoration: 'none'}}>
-             <ButtonContainer>
-               <VisitButton>View Project</VisitButton>
-               <VisitButton>Github Repo</VisitButton>
-             </ButtonContainer>
-             </Link>
-         </Container>
-
-         {/*Project 3*/}
-         <Container>
-             <ParagraphTitle>Typescript e-commerce store</ParagraphTitle>
-             <TextParagraph>One of my biggest projects in Java is this cool Typescript store. 
-               To me it is one of my most interesting projects. It is built in TypeScript Java.</TextParagraph>
-             
-             <Link to="https://github.com/LouisWackenier?tab=repositories" style={{ textDecoration: 'none'}}>
-             <ButtonContainer>
-              <VisitButton>View Project</VisitButton>
-              <VisitButton>Github Repo</VisitButton>
-             </ButtonContainer>
-             </Link>
-         </Container>
-    </Section>
-  )
-}
-
-export default Portfolio

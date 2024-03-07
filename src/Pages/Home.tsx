@@ -35,7 +35,9 @@ const Home = () => {
           </Container>
          </BackgroundSection>
          </BackgroundAnimation>
+
          <Section>
+
          </Section>
     </>
   );
@@ -44,6 +46,13 @@ const Home = () => {
 export default Home;
 
 //STYLING CSS
+
+const CurrentContainer = styled.div``;
+
+const ContainerItem = styled.div``;
+
+const ContainerItemText = styled.div``;
+
 const Section = styled.div`
     height: 100vh;
     background-color: #010016;
