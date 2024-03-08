@@ -37,7 +37,12 @@ const Home = () => {
          </BackgroundAnimation>
 
          <Section>
-
+              <CurrentContainer>
+                  <CurrentContainerTitle>Current Projects</CurrentContainerTitle>
+                  <ContainerItem>
+                       <ContainerItemText>Portfolio</ContainerItemText>
+                  </ContainerItem>
+              </CurrentContainer>
          </Section>
     </>
   );
@@ -48,6 +53,8 @@ export default Home;
 //STYLING CSS
 
 const CurrentContainer = styled.div``;
+
+const CurrentContainerTitle = styled.div``;
 
 const ContainerItem = styled.div``;
 

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
 
   return (
-    <div className='bg-purple w-screen'>
+    <NavbarContainer>
       <Link to="/" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
          <Button>Home</Button>
        </Link>
@@ -22,7 +22,7 @@ const Navbar = () => {
       </Link>
       {/*Link to Portfolio Section*/}
       
-   </div>
+   </NavbarContainer>
   )
 }
 
