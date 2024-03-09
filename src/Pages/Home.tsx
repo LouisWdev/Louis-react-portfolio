@@ -39,9 +39,17 @@ const Home = () => {
          <Section>
               <CurrentContainer>
                   <CurrentContainerTitle>Current Projects</CurrentContainerTitle>
-                  <ContainerItem>
-                       <ContainerItemText>Portfolio</ContainerItemText>
-                  </ContainerItem>
+                  <ItemContainer>
+                  <Item>
+                       <ItemText>Portfolio</ItemText>
+                  </Item>
+                  <Item>
+                       <ItemText>Crypto app</ItemText>
+                  </Item>
+                  <Item>
+                       <ItemText>Neural Network</ItemText>
+                  </Item>
+                  </ItemContainer>
               </CurrentContainer>
          </Section>
     </>
@@ -56,9 +64,15 @@ const CurrentContainer = styled.div``;
 
 const CurrentContainerTitle = styled.div``;
 
-const ContainerItem = styled.div``;
+const ItemContainer = styled.div`
+    display: flex;
+`;
 
-const ContainerItemText = styled.div``;
+const Item = styled.div`
+    margin-left: 1vh;
+`;
+
+const ItemText = styled.div``;
 
 const Section = styled.div`
     height: 100vh;
