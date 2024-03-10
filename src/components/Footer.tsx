@@ -34,8 +34,6 @@ const Footer = () => {
 export default Footer;
 
 const FooterContainer = styled.div`
-        background-color: rgba(7, 0, 27, 0.8);
-        width: 100%;
         display: inline-block;
         position: fixed;
    

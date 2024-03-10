@@ -59,13 +59,20 @@ const Home = () => {
 export default Home;
 
 //STYLING CSS
+const CurrentContainer = styled.div`
+    text-align: center;
+    margin-top: 4vh;
+`;
 
-const CurrentContainer = styled.div``;
-
-const CurrentContainerTitle = styled.div``;
+const CurrentContainerTitle = styled.div`
+   
+`;
 
 const ItemContainer = styled.div`
-    display: flex;
+    display: flex; 
+    margin-top: 1vh;
+    margin-left: 42vw;
+    
 `;
 
 const Item = styled.div`
