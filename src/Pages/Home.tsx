@@ -65,18 +65,21 @@ const CurrentContainer = styled.div`
 `;
 
 const CurrentContainerTitle = styled.div`
-   
+    padding-bottom: 3vh;
+    font-size: 1.5vw
 `;
 
 const ItemContainer = styled.div`
     display: flex; 
     margin-top: 1vh;
-    margin-left: 42vw;
+    margin-left: 38vw;
+    padding-bottom: 3vh;
     
 `;
 
 const Item = styled.div`
-    margin-left: 1vh;
+    font-size: 1.5vw;
+    margin-left: 3vh;
 `;
 
 const ItemText = styled.div``;
