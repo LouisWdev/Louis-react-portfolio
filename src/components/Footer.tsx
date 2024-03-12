@@ -8,7 +8,7 @@ const Footer = () => {
   return (
       <FooterContainer>
               <Text>© 2024 Louis W. All rights reserved.</Text>
-              <Socials>My Socials 
+              <Socials>My Socials
                 <TwitterIconContainer>
                    <Link to="https://twitter.com/LouisWDev">
                       <TwitterIcon />
@@ -36,13 +36,10 @@ export default Footer;
 const FooterContainer = styled.div`
         display: inline-block;
         position: fixed;
-   
-        background-color: transparent;
-   
         bottom: 0%;
-   
         margin-bottom: 20px;
         margin-left: 40px;
+        background-color: transparent;
    `;
    
    const TwitterIconContainer = styled.div`
