@@ -72,7 +72,7 @@ const CurrentContainerTitle = styled.div`
 const ItemContainer = styled.div`
     display: flex; 
     margin-top: 1vh;
-    margin-left: 37vw;
+    margin-left: 37.5vw;
     padding-bottom: 3vh;
     
 `;
