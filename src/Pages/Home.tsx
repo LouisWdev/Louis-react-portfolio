@@ -17,11 +17,11 @@ const Home = () => {
     <>
         <Navbar />
         <BackgroundAnimation>
-        <BackgroundSection>
-          <Container>
-            <Text>
-              Welcome to my Portfolio
-             </Text>
+           <BackgroundSection>
+             <Container>
+              <Text>
+               Welcome to my Portfolio
+              </Text>
            <BreakLine/>
             <SubText>
               My name is Louis and I am a fullstack developer
@@ -35,22 +35,27 @@ const Home = () => {
           </Container>
          </BackgroundSection>
          </BackgroundAnimation>
-
-         <Section>
               <CurrentContainer>
                   <CurrentContainerTitle>Current Projects</CurrentContainerTitle>
                   <ItemContainer>
                   <Item>
                        <ItemText>Portfolio</ItemText>
+                       <ProjectImage>
+                       </ProjectImage>
                   </Item>
                   <Item>
                        <ItemText>Crypto app</ItemText>
+                       <ProjectImage>
+                       </ProjectImage>
                   </Item>
                   <Item>
                        <ItemText>Neural Network</ItemText>
+                       <ProjectImage>
+                       </ProjectImage>
                   </Item>
                   </ItemContainer>
               </CurrentContainer>
+          <Section>
          </Section>
     </>
   );
@@ -59,6 +64,13 @@ const Home = () => {
 export default Home;
 
 //STYLING CSS
+/* GENERAL STYLINGS */
+const Section = styled.div`
+    height: 100vh;
+    background-color: #010016;
+`;
+
+/* PROJECTS BEING WORKED ON */
 const CurrentContainer = styled.div`
     text-align: center;
     margin-top: 4vh;
@@ -72,8 +84,8 @@ const CurrentContainerTitle = styled.div`
 const ItemContainer = styled.div`
     display: flex; 
     margin-top: 1vh;
-    margin-left: 37.5vw;
-    padding-bottom: 3vh;
+    margin-left: 7vw;
+    padding-bottom: 8vh;
     
 `;
 
@@ -84,11 +96,14 @@ const Item = styled.div`
 
 const ItemText = styled.div``;
 
-const Section = styled.div`
-    height: 100vh;
-    background-color: #010016;
+const ProjectImage = styled.div`
+     background-color: white;
+     width: 500px;
+     height: 250px;
 `;
 
+
+/* LANDING SECTION */
 const BackgroundSection = styled.div`
        height: 100vh;
        display: flex;
