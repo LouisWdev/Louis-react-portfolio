@@ -34,6 +34,7 @@ const Footer = () => {
 export default Footer;
 
 const FooterContainer = styled.div`
+        background-color: transparent;
         display: inline-block;
         position: fixed;
         bottom: 0%;
@@ -43,16 +44,19 @@ const FooterContainer = styled.div`
    `;
    
    const TwitterIconContainer = styled.div`
+       background-color: transparent;
        padding-left: 15px;
        cursor: pointer;
    `;
    
    const LinkedInIconContainer = styled.div`
+      background-color: transparent;
       padding-left: 10px;
       cursor: pointer;
    `;
    
    const GitHubIconContainer = styled.div`
+      background-color: transparent;
       padding-left: 10px;
       cursor: pointer;
    `;

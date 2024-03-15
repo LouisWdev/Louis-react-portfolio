@@ -56,6 +56,7 @@ const Home = () => {
                   </ItemContainer>
               </CurrentContainer>
           <Section>
+              
          </Section>
     </>
   );
@@ -67,7 +68,7 @@ export default Home;
 /* GENERAL STYLINGS */
 const Section = styled.div`
     height: 100vh;
-    background-color: #010016;
+    background-color: #001da0;
 `;
 
 /* PROJECTS BEING WORKED ON */
@@ -85,8 +86,7 @@ const ItemContainer = styled.div`
     display: flex; 
     margin-top: 1vh;
     margin-left: 7vw;
-    padding-bottom: 8vh;
-    
+    padding-bottom: 8vh; 
 `;
 
 const Item = styled.div`
@@ -94,7 +94,10 @@ const Item = styled.div`
     margin-left: 3vh;
 `;
 
-const ItemText = styled.div``;
+const ItemText = styled.div`
+     font-weight: 400;
+     margin-bottom: 1vh;
+`;
 
 const ProjectImage = styled.div`
      background-color: white;
