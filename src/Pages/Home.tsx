@@ -67,7 +67,7 @@ export default Home;
 //STYLING CSS
 /* GENERAL STYLINGS */
 const Section = styled.div`
-    height: 100vh;
+    height: 95vh;
     background-color: #001da0;
 `;
 
