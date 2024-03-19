@@ -30,7 +30,7 @@ export default Navbar
 
 //STYLING
 const NavbarContainer = styled.div`
-  background-color: rgba(7, 0, 27, 0.8);
+  background-color: #07001bcc;
   width: 100%;
   display: flex;
   justify-content: center; /* Center items horizontally */

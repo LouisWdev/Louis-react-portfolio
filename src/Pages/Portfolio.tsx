@@ -84,10 +84,10 @@ const PortfolioTitle = styled.h1`
 `;
 
 const TitleSubText = styled.h2`
-    text-align: center;
     border-bottom: 3px solid white;
     width: 50vw;
-    margin-left: 23vw;
+    text-align: center;
+    margin-left: 25vw;
     padding-bottom: 50px;
 `;
 
