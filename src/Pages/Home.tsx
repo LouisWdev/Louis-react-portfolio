@@ -26,12 +26,6 @@ const Home = () => {
             <SubText>
               My name is Louis and I am a fullstack developer
             </SubText>
-             <Link to="/Portfolio" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
-                <BtnPortfolio>Portfolio</BtnPortfolio>
-              </Link>
-             <Link to="Contact" style={{ textDecoration: 'none', backgroundColor: 'transparent'}}>
-                <BtnContact>Contact</BtnContact>
-            </Link> 
           </Container>
          </BackgroundSection>
          </BackgroundAnimation>
