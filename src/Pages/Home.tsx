@@ -7,9 +7,6 @@ import Navbar from '../components/Navbar';
 //ASSETS
 import BackgroundImg from '../assets/images/HomeBackgroundEdited.png'
 
-//REACT ROUTER 
-import { Link } from 'react-router-dom';
-
 
 const Home = () => {
 
@@ -170,51 +167,4 @@ const BackgroundSection = styled.div`
       z-index: 1;
       font-size: 20px;
       font-weight: 700;
- `;
- 
- const BtnPortfolio = styled.button`
-      font-weight: bolder;
-      margin: 10px;
-      margin-left: 20%;
-      font-size: 25px;
-      cursor: pointer;
- 
-      color: black;
-      background-color: #6846ff;
-      border: 3px solid black;
-      letter-spacing: 3px;
-      border-radius: 5px;
-      height: 50px;
-      width: 175px;
- 
-      transition: background-color 2s;
-      transition: color 2s;
- 
-      &:hover {
-        background-color: black;
-        color: white;
-   }
- `;
- 
- const BtnContact = styled.button`
-      font-weight: bolder;
-      margin: 10px;
-      font-size: 25px;
-      cursor: pointer;
-      color: black;
-      background-color: #6846ff;
-      border: 3px solid black;
- 
-      letter-spacing: 3px;
-      border-radius: 5px;
-      height: 50px;
-      width: 175px;
- 
-      transition: background-color 2s;
-      transition: color 2s;
- 
-      &:hover {
-        background-color: black;
-        color: white;
-   }
  `;
