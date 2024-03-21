@@ -12,14 +12,13 @@ const Home = () => {
 
   return (
     <>
-        <Navbar />
+      <Navbar />
         <BackgroundAnimation>
            <BackgroundSection>
              <Container>
               <Text>
                Welcome to my Portfolio
               </Text>
-           <BreakLine/>
             <SubText>
               My name is Louis and I am a fullstack developer
             </SubText>
@@ -150,14 +149,6 @@ const BackgroundSection = styled.div`
    letter-spacing: 0.15em;
    animation: ${typingAnimation} 3.5s steps(40, end), ${blinkCaret} 0.75s step-end infinite;
    z-index: 1;
- `;
- 
- const BreakLine = styled.div`
-       margin-left: 14%;
-       width: 60%;
-       height: 2px; /* Set the height of the separate line */
-       background-color: rgba(0, 0, 0, 0.5); /* Color of the separate line */
-       z-index: 1;
  `;
  
  const SubText = styled.div`
