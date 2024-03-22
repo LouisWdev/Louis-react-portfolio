@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 //PORTFOLIO IMAGES
 import krypt from '../assets/images/ProjectImages/Blockchain.png';
-import adminPanel from '../assets/images/ProjectImages/AICoding.png';
+import adminPanel from '../assets/images/ProjectImages/CyberStreet.png';
 import ecommerce from '../assets/images/ProjectImages/CyberpunkStreet.png';
 
 //REACT ROUTER
