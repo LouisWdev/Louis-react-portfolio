@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 //PORTFOLIO IMAGES
 import krypt from '../assets/images/ProjectImages/Blockchain.png';
+import adminPanel from '../assets/images/ProjectImages/AICoding.png';
+import ecommerce from '../assets/images/ProjectImages/CyberpunkStreet.png';
 
 //REACT ROUTER
 import { Link } from 'react-router-dom';
@@ -29,6 +31,7 @@ const Portfolio = () => {
 
          {/*Project 2*/}
          <Container>
+             <Image src={adminPanel}></Image>
              <ParagraphTitle>Responsive Admin panel</ParagraphTitle>
              <TextParagraph>This admin panel was built with html and CSS.</TextParagraph>
              
@@ -42,6 +45,7 @@ const Portfolio = () => {
 
          {/*Project 3*/}
          <Container>
+             <Image src={ecommerce}></Image>
              <ParagraphTitle>Typescript e-commerce store</ParagraphTitle>
              <TextParagraph>One of my biggest projects in Java is this cool Typescript store. 
                To me it is one of my most interesting projects. It is built in TypeScript Java.</TextParagraph>
@@ -99,8 +103,9 @@ const Container = styled.div`
     padding-top: 1vh;
     padding-left: 1vh;
     padding-right: 1vh;
+    padding-bottom: 1vh;
     border: 2px solid white;
-    height: 43vh;
+    height: auto;
     justify-content: flex-start;
     z-index: -1;
     background: rgb(2,0,36);

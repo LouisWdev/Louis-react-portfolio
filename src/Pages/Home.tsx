@@ -25,29 +25,6 @@ const Home = () => {
           </Container>
          </BackgroundSection>
          </BackgroundAnimation>
-              <CurrentContainer>
-                  <CurrentContainerTitle>Current Projects</CurrentContainerTitle>
-                  <ItemContainer>
-                  <Item>
-                       <ItemText>Portfolio</ItemText>
-                       <ProjectImage>
-                       </ProjectImage>
-                  </Item>
-                  <Item>
-                       <ItemText>Crypto app</ItemText>
-                       <ProjectImage>
-                       </ProjectImage>
-                  </Item>
-                  <Item>
-                       <ItemText>Neural Network</ItemText>
-                       <ProjectImage>
-                       </ProjectImage>
-                  </Item>
-                  </ItemContainer>
-              </CurrentContainer>
-          <Section>
-              
-         </Section>
     </>
   );
 };
@@ -55,47 +32,6 @@ const Home = () => {
 export default Home;
 
 //STYLING CSS
-/* GENERAL STYLINGS */
-const Section = styled.div`
-    height: 90vh;
-    background-color: #001da0;
-`;
-
-/* PROJECTS BEING WORKED ON */
-const CurrentContainer = styled.div`
-    text-align: center;
-    margin-top: 4vh;
-`;
-
-const CurrentContainerTitle = styled.div`
-    padding-bottom: 3vh;
-    font-size: 1.5vw
-`;
-
-const ItemContainer = styled.div`
-    display: flex; 
-    margin-top: 1vh;
-    margin-left: 7vw;
-    padding-bottom: 8vh; 
-`;
-
-const Item = styled.div`
-    font-size: 1.5vw;
-    margin-left: 3vh;
-`;
-
-const ItemText = styled.div`
-     font-weight: 400;
-     margin-bottom: 1vh;
-`;
-
-const ProjectImage = styled.div`
-     background-color: white;
-     width: 500px;
-     height: 250px;
-`;
-
-
 /* LANDING SECTION */
 const BackgroundSection = styled.div`
        height: 100vh;
