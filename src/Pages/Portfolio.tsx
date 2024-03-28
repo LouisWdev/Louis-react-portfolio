@@ -103,7 +103,7 @@ const Container = styled.div`
     padding-top: 1vh;
     padding-left: 1vh;
     padding-right: 1vh;
-    padding-bottom: 1vh;
+    padding-bottom: 2vh;
     border: 2px solid white;
     height: auto;
     justify-content: flex-start;

@@ -27,6 +27,7 @@ const Footer = () => {
                    </Link>
                 </GitHubIconContainer>
               </Socials>
+              <Text>V0.1</Text>
       </FooterContainer>
   )
 }
