@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
       <FooterContainer>
-              <Text>© 2024 Louis W. All rights reserved.</Text>
+              <Text>V0.1 © 2024 Louis W. All rights reserved. </Text>
               <Socials>My Socials
                 <TwitterIconContainer>
                    <Link to="https://twitter.com/LouisWDev">
@@ -27,7 +27,6 @@ const Footer = () => {
                    </Link>
                 </GitHubIconContainer>
               </Socials>
-              <Text>V0.1</Text>
       </FooterContainer>
   )
 }
