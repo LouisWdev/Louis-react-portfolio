@@ -92,7 +92,7 @@ const TitleSubText = styled.h2`
     width: 50vw;
     text-align: center;
     margin-left: 25vw;
-    padding-bottom: 50px;
+    padding-bottom: 2vh;
 `;
 
 const Container = styled.div`
@@ -123,6 +123,7 @@ const Container = styled.div`
 const Image = styled.img`
      width: 500px;
      border: solid darkgray 2px;
+     border-radius: 1vw;
 `;
 
 const ParagraphTitle = styled.div`
