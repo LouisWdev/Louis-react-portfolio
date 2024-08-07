@@ -27,7 +27,7 @@ const About = () => {
         <Title>Next Generation</Title>
       
       <Description>
-          Throughout my journey of Learning how to code I have learned how to use different technologies.<br /> 
+          Throughout my journey of learning how to code I have learned how to use different technologies.<br /> 
           And now I have a good understanding of these powerful last generation technologies<br />
           Some of these you may know like NextJS, React, etc. These frameworks are an essential part of what a business needs to succeed in the modern sphere of IT.
       </Description>
@@ -36,7 +36,7 @@ const About = () => {
       <Title>Crypto</Title>
       <Description>
           The decentralized crypto market has been on the rise and lots of people and businesses are using it and yet there are people that are missing out, as for me<br />
-          I have been studying this market ever since it has been becoming mainstream and have been working on projects that have to do with this trend<br />
+          I have been studying this market ever since it has been becoming mainstream and have been working on projects that have to do with this trend.<br />
       </Description>
 
       <AIImage src={AiImage}/>
