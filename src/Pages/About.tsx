@@ -10,11 +10,13 @@ import AiImage from '../assets/images/AboutImage/Ai-image.png';
 
 const About = () => {
   return (
+    // SECTION CONTAINER 
     <Section id="About">
     <SectionContainer>
       <Container>
         <GlowingImage src={AboutmeImg}/>
       </Container>
+      {/* TITLE CONTAINER */}
       <Title>About Me</Title>
       <Description>
           I started coding from a young age and was already amazed by how coding works.<br /> 
