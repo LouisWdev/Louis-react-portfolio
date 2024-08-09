@@ -18,6 +18,7 @@ const About = () => {
       </Container>
       {/* TITLE CONTAINER */}
       <Title>About Me</Title>
+      {/* description container */}
       <Description>
           I started coding from a young age and was already amazed by how coding works.<br /> 
           And so I strive to become a 10x developer.<br />
