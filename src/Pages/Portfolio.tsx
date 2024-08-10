@@ -63,6 +63,7 @@ const Portfolio = () => {
 
 export default Portfolio
 
+// CSS STYLED COMPONENTS
 const Section = styled.div`
      height: 100vh;
 `;
