@@ -45,6 +45,7 @@ const Portfolio = () => {
 
          {/*Project 3*/}
          <Container>
+             {/* Image container. */}
              <Image src={ecommerce}></Image>
              <ParagraphTitle>Typescript e-commerce store</ParagraphTitle>
              <TextParagraph>One of my biggest projects in Java is this cool Typescript store. 
